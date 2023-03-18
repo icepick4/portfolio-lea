@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-    <div class="flex flex-row gap-4 ml-12 bg-transparent absolute z-50">
+    <div class="flex flex-row gap-4 ml-12 bg-transparent fixed z-50">
         <RouterLink to="/" class="m-4 text-lime-700 text-xl font-bold">
             <span class="hover:text-black transition-all duration-600"
                 >Accueil</span

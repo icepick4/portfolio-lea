@@ -29,7 +29,7 @@ const router = createRouter({
         },
         {
             path: '/travaux/:id',
-            name: 'project',
+            name: 'SingleProject',
             component: SingleProject
         }
     ]

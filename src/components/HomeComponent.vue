@@ -42,7 +42,7 @@ export default defineComponent({
 
 <template>
     <div
-        class="w-full h-screen flex items-center justify-center"
+        class="w-screen h-screen flex items-center justify-center"
         :class="color"
     >
         <div
