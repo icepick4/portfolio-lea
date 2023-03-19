@@ -62,7 +62,7 @@ export default defineComponent({
     <div class="flex flex-col">
         <HomeComponent
             color="green"
-            character="ondulés"
+            character="ondule"
             title="Bonjour ! moi
         c'est Léa"
             id="section-1"

@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import About from '../views/About.vue';
 import Contact from '../views/Contact.vue';
+import Cv from '../views/Cv.vue';
 import Home from '../views/Home.vue';
 import Projects from '../views/Projects.vue';
 import SingleProject from '../views/SingleProject.vue';
@@ -31,6 +32,11 @@ const router = createRouter({
             path: '/travaux/:id',
             name: 'SingleProject',
             component: SingleProject
+        },
+        {
+            path: '/cv',
+            name: 'Cv',
+            component: Cv
         }
     ]
 });

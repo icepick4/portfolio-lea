@@ -8,6 +8,11 @@ module.exports = {
             },
             fontFamily: {
                 title: "'Title'"
+            },
+            colors: {
+                orange: '#ff8c4f',
+                yellow: '#ffe488',
+                pink: '#fd2b58'
             }
         }
     },

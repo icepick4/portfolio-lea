@@ -22,7 +22,7 @@ export default defineComponent({
                     id: project.id
                 }
             }"
-            class="flex flex-col justify-between p-4 bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out hover:-translate-y-2 w-auto place-self-center"
+            class="flex flex-col justify-between p-4 bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out hover:-translate-y-2 place-self-center w-full h-full"
         >
             <div>
                 <h1 class="text-2xl font-bold font-title">
