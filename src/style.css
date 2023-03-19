@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('./assets/fonts/Poppins-Regular.ttf');
+    src: url('./assets/fonts/Poppins-Light.ttf');
 }
 
 @font-face {
@@ -20,7 +20,7 @@ body {
     height: 100vh;
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
-    background-color: #fffddb;
+    background-color: #fff;
 }
 
 

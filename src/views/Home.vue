@@ -63,15 +63,15 @@ export default defineComponent({
         <HomeComponent
             color="green"
             character="ondule"
-            title="Bonjour ! moi
+            title="<span class='font-title'>Bonjour</span> !</br> moi
         c'est Léa"
             id="section-1"
         />
         <HomeComponent
             color="red"
             character="chignons"
-            title="Il était une
-        fois, moi ..."
+            title="<span class='font-title'>Il était une
+        fois, moi ... </span>"
             description="Bonjour moi c'est Léa.
         Je viens de Thonon-les-Bains en Haute-Savoie. 
         Je suis dynamique, drôle, souriante et toujours de bonne humeur ! 
@@ -83,7 +83,7 @@ export default defineComponent({
         <HomeComponent
             color="blue"
             character="couronne"
-            title="A la découverte de mon univers"
+            title="<span class='font-title'>A la découverte de mon univers</span>"
             link="/travaux"
             linkText="Voir mes réalisations"
             id="section-3"

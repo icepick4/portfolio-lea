@@ -42,12 +42,12 @@ export default defineComponent({
                 'is-flipped': !isHovered,
                 [colorClass]: true
             }"
-            class="h-full rounded-xl"
+            class="h-full rounded-[35px]"
         >
             <div
                 class="absolute w-full h-full front flex flex-col items-center justify-around"
             >
-                <h2 class="text-2xl font-bold">{{ title }}</h2>
+                <h2 class="text-3xl font-bold font-title">{{ title }}</h2>
                 <ul v-if="list" class="flex flex-col gap-2 w-4/6 h-auto">
                     <div v-for="i in list.length" :key="i">
                         <li :class="i % 2 != 0 ? 'list-disc' : 'list-none'">
@@ -67,7 +67,7 @@ export default defineComponent({
             <div
                 class="absolute w-full h-full back flex flex-col items-center justify-evenly"
             >
-                <h2 class="text-2xl font-bold">{{ title }}</h2>
+                <h2 class="text-3xl font-bold font-title">{{ title }}</h2>
                 <img
                     :src="`/src/assets/characters/${character}.png`"
                     class="w-4/6 h-auto"
@@ -100,7 +100,7 @@ export default defineComponent({
 }
 
 .card.is-flipped {
-    transform: rotateX(180deg);
+    transform: rotateY(180deg);
 }
 
 .card .front {
@@ -109,6 +109,6 @@ export default defineComponent({
 
 .card .back {
     backface-visibility: hidden;
-    transform: rotateX(180deg);
+    transform: rotateY(180deg);
 }
 </style>

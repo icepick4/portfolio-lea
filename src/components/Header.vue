@@ -8,10 +8,7 @@
                     >Accueil</span
                 >
             </RouterLink>
-            <RouterLink
-                to="/a-propos"
-                class="m-4 text-lime-700 text-xl font-bold"
-            >
+            <RouterLink to="/cv" class="m-4 text-lime-700 text-xl font-bold">
                 <span class="hover:text-black transition-all duration-600"
                     >À propos de moi</span
                 >

@@ -15,11 +15,11 @@ export default defineComponent({
 
 <template>
     <div class="flex flex-col items-center gap-20 h-full mb-20">
-        <h1 class="text-4xl">Curriculum Vitae</h1>
+        <h1 class="text-6xl font-title">Curriculum Vitae</h1>
         <a
             class="text-xl font-bold border-4 rounded-lg border-black p-2 mt-4 hover:bg-black hover:text-white transition-all duration-300 mb-16"
         >
-            Download PDF
+            Télécharger le PDF
         </a>
         <div class="flex flex-col items-center gap-5 w-full xl:flex-row">
             <SkillCard
