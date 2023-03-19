@@ -5,6 +5,9 @@ module.exports = {
         extend: {
             backgroundImage: {
                 homebg: "url('/src/assets/bg/home-bg.jpg')"
+            },
+            fontFamily: {
+                title: "'Title'"
             }
         }
     },

@@ -1,57 +1,9 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
-interface Project {
-    id: number;
-    title: string;
-    description: string;
-}
+import { projects } from '../utils';
 export default defineComponent({
     name: 'Projects',
     setup() {
-        const projects: Project[] = [
-            {
-                id: 1,
-                title: 'Enora',
-                description:
-                    'Enora is a web application that allows you to create and manage your own personal blog. It is built with Vue 3, TypeScript, and Tailwind CSS.'
-            },
-            {
-                id: 2,
-                title: 'Léartistes',
-                description:
-                    'Léartistes is a web application that allows you to create and manage your own personal blog. It is built with Vue 3, TypeScript, and Tailwind CSS.'
-            },
-            {
-                id: 3,
-                title: 'Polaroid',
-                description:
-                    'Polaroid is a web application that allows you to create and manage your own personal blog. It is built with Vue 3, TypeScript, and Tailwind CSS.'
-            },
-            {
-                id: 4,
-                title: "Vivre d'amour",
-                description:
-                    "Vivre d'amour is a web application that allows you to create and manage your own personal blog. It is built with Vue 3, TypeScript, and Tailwind CSS."
-            },
-            {
-                id: 5,
-                title: 'Affiches minimalistes',
-                description:
-                    'Affiches minimalistes is a web application that allows you to create and manage your own personal blog. It is built with Vue 3, TypeScript, and Tailwind CSS.'
-            },
-            {
-                id: 6,
-                title: 'Chat motion',
-                description:
-                    'Chat motion is a web application that allows you to create and manage your own personal blog. It is built with Vue 3, TypeScript, and Tailwind CSS.'
-            },
-            {
-                id: 7,
-                title: 'CocaCola life',
-                description:
-                    'CocaCola life is a web application that allows you to create and manage your own personal blog. It is built with Vue 3, TypeScript, and Tailwind CSS.'
-            }
-        ];
         return { projects };
     }
 });
@@ -66,12 +18,16 @@ export default defineComponent({
             :key="project.id"
             :to="{
                 name: 'SingleProject',
-                params: { id: project.id }
+                params: {
+                    id: project.id
+                }
             }"
             class="flex flex-col justify-between p-4 bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out hover:-translate-y-2 w-auto place-self-center"
         >
             <div>
-                <h1 class="text-2xl font-bold">{{ project.title }}</h1>
+                <h1 class="text-2xl font-bold font-title">
+                    {{ project.title }}
+                </h1>
                 <p class="text-gray-500">{{ project.description }}</p>
             </div>
             <div class="flex justify-end">

@@ -7,10 +7,11 @@
     src: url('./assets/fonts/Poppins-Regular.ttf');
 }
 
-:root {
-    font-family: 'Poppins', sans-serif;
-    background-color: #fffddb;
+@font-face {
+    font-family: 'Title';
+    src: url('./assets/fonts/YesevaOne-Regular.ttf');
 }
+
 
 html,
 body {
@@ -18,6 +19,8 @@ body {
     padding: 0;
     height: 100vh;
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffddb;
 }
 
 

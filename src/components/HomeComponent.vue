@@ -52,7 +52,7 @@ export default defineComponent({
             <div v-if="link">
                 <RouterLink
                     :to="link"
-                    class="text-xl font-bold border-4 rounded-md border-white p-2 mt-4 hover:bg-white hover:text-black transition-all duration-300"
+                    class="text-xl font-bold border-4 rounded-lg border-white p-2 mt-4 hover:bg-white hover:text-black transition-all duration-300"
                 >
                     {{ linkText }}
                 </RouterLink>
