@@ -7,12 +7,14 @@ export default defineComponent({
 </script>
 
 <template>
-    <div class="grid grid-cols-3 grid-rows-1 gap-5">
+    <div
+        class="grid grid-cols-1 grid-rows-1 gap-5 w-1/2 lg:grid-cols-3 lg:w-5/6"
+    >
         <img
             v-for="i in 3"
             :key="i"
             :src="`/src/assets/cocacola-life/${i}.jpg`"
-            class="w-auto h-auto object-cover"
+            class="w-full h-auto object-cover"
         />
     </div>
 </template>

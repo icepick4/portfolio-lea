@@ -24,7 +24,9 @@ export default defineComponent({
         />
     </div>
     <h1 class="text-xl">Mise en situation des affiches</h1>
-    <div class="grid grid-cols-6 grid-rows-1 gap-5 w-3/5">
+    <div
+        class="grid grid-cols-2 grid-rows-1 gap-5 w-3/5 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6"
+    >
         <img
             v-for="i in 6"
             :key="i"

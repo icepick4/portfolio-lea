@@ -26,7 +26,9 @@ export default defineComponent({
         />
     </div>
     <h1 class="text-2xl">Idées de déclinaison des illustrations</h1>
-    <div class="grid grid-cols-7 grid-row gap-5 m-10">
+    <div
+        class="grid grid-cols-3 grid-row gap-5 m-10 xl:grid-cols-7 md:grid-cols-5 sm:grid-cols-3"
+    >
         <img
             v-for="i in 7"
             :key="i"

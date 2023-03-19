@@ -8,7 +8,9 @@ export default defineComponent({
 
 <template>
     <img src="/src/assets/enora/1.jpg" class="h-auto object-cover w-1/2" />
-    <div class="grid grid-cols-5 grid-rows-1 gap-5 w-1/2">
+    <div
+        class="grid grid-cols-2 grid-rows-1 gap-5 w-1/2 lg:grid-cols-5 md:grid-cols-4"
+    >
         <img
             v-for="i in 5"
             :key="i"

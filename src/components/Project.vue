@@ -5,6 +5,7 @@ import ChatMotion from './projects/ChatMotion.vue';
 import CocaColaLife from './projects/CocaColaLife.vue';
 import Enora from './projects/Enora.vue';
 import LeArtistes from './projects/LeArtistes.vue';
+import Logofolio from './projects/Logofolio.vue';
 import Polaroid from './projects/Polaroid.vue';
 import VivreDAmour from './projects/VivreDAmour.vue';
 
@@ -31,7 +32,8 @@ export default defineComponent({
         AffichesMinimalistes,
         Enora,
         Polaroid,
-        CocaColaLife
+        CocaColaLife,
+        Logofolio
     }
 });
 </script>
@@ -40,8 +42,8 @@ export default defineComponent({
     <div
         class="flex flex-col items-center justify-center w-full text-black gap-10"
     >
-        <h1 class="text-7xl font-bold font-title">{{ title }}</h1>
-        <p>{{ description }}</p>
+        <h1 class="text-7xl font-bold font-title text-center">{{ title }}</h1>
+        <p class="m-10 w-5/6 lg:w-1/3 text-center">{{ description }}</p>
         <component :is="component" />
     </div>
 </template>
