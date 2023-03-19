@@ -103,6 +103,13 @@ export default defineComponent({
     transform-style: preserve-3d;
 }
 
+@media (max-width: 768px) {
+    .card {
+        width: 350px;
+        height: 500px;
+    }
+}
+
 .card.is-flipped {
     transform: rotateX(180deg);
 }

@@ -42,8 +42,12 @@ export default defineComponent({
     <div
         class="flex flex-col items-center justify-center w-full text-black gap-10"
     >
-        <h1 class="text-7xl font-bold font-title text-center">{{ title }}</h1>
-        <p class="m-10 w-5/6 lg:w-1/3 text-center">{{ description }}</p>
+        <h1
+            class="text-4xl font-bold font-title text-center sm:text-6xl lg:text-7xl"
+        >
+            {{ title }}
+        </h1>
+        <p class="m-10 w-5/6 lg:w-1/3 text-center" v-html="description"></p>
         <component :is="component" />
     </div>
 </template>

@@ -21,7 +21,7 @@ export default defineComponent({
         >
             Download PDF
         </a>
-        <div class="flex flex-col items-center gap-5 w-full lg:flex-row">
+        <div class="flex flex-col items-center gap-5 w-full xl:flex-row">
             <SkillCard
                 v-for="skill in skills"
                 :key="skill.title"

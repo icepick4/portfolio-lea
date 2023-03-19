@@ -28,7 +28,7 @@ export default defineComponent({
                 <h1 class="text-2xl font-bold font-title">
                     {{ project.title }}
                 </h1>
-                <p class="text-gray-500">{{ project.description }}</p>
+                <p class="text-gray-500" v-html="project.description"></p>
             </div>
             <div class="flex justify-end">
                 <svg
