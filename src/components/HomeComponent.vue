@@ -48,7 +48,7 @@ export default defineComponent({
         <div
             class="flex flex-col items-center justify-center w-full text-white gap-10"
         >
-            <h1 class="text-4xl font-bold">{{ title }}</h1>
+            <h1 class="text-4xl font-bold text-center">{{ title }}</h1>
             <div v-if="link">
                 <RouterLink
                     :to="link"
@@ -60,13 +60,16 @@ export default defineComponent({
             <img
                 :src="'/src/assets/characters/' + character + '.png'"
                 alt="hero"
-                class="w-1/6 mx-auto"
+                class="w-2/6 mx-auto lg:w-1/6"
             />
-            <div v-if="description != null" class="flex flex-col items-center">
+            <div
+                v-if="description != null"
+                class="flex flex-col items-center w-5/6"
+            >
                 <p
                     v-for="(word, index) in splitText"
                     :key="index"
-                    class="text-xl"
+                    class="text-xl text-center"
                 >
                     {{ word }}
                 </p>

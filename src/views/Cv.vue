@@ -14,24 +14,22 @@ export default defineComponent({
 </script>
 
 <template>
-    <div class="flex flex-col items-center gap-20 h-full">
+    <div class="flex flex-col items-center gap-20 h-full mb-20">
         <h1 class="text-4xl">Curriculum Vitae</h1>
         <a
             class="text-xl font-bold border-4 rounded-lg border-black p-2 mt-4 hover:bg-black hover:text-white transition-all duration-300 mb-16"
         >
             Download PDF
         </a>
-        <div class="flex flex-col items-center">
-            <div class="flex flex-row items-center gap-5 w-3/4">
-                <SkillCard
-                    v-for="skill in skills"
-                    :key="skill.title"
-                    :title="skill.title"
-                    :list="skill.list"
-                    :color="skill.color"
-                    :character="skill.character"
-                />
-            </div>
+        <div class="flex flex-col items-center gap-5 w-full lg:flex-row">
+            <SkillCard
+                v-for="skill in skills"
+                :key="skill.title"
+                :title="skill.title"
+                :list="skill.list"
+                :color="skill.color"
+                :character="skill.character"
+            />
         </div>
     </div>
 </template>

@@ -24,7 +24,7 @@ export default defineComponent({
         },
         activatedIndex(index: number) {
             index = index - 1;
-            if (index === 2 && this.scrollPosition === 100) {
+            if (index === 2 && this.scrollPosition >= 33 * index) {
                 return true;
             }
             return (
@@ -49,7 +49,7 @@ export default defineComponent({
     <div class="flex flex-col items-end fixed top-10 right-10 w-1/12">
         <div
             v-for="i in 3"
-            class="w-full flex items-end justify-end p-6"
+            class="w-full flex min-w-[150px] items-end justify-end p-6"
             :key="i"
             @click="scrollTo(i)"
         >

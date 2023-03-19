@@ -39,32 +39,34 @@ export default defineComponent({
         <div
             :class="{
                 card: true,
-                'is-flipped': !isHovered
+                'is-flipped': !isHovered,
+                [colorClass]: true
             }"
-            class="h-full"
+            class="h-full rounded-xl"
         >
-            <div class="absolute w-full h-full front">
+            <div
+                class="absolute w-full h-full front flex flex-col items-center justify-around"
+            >
                 <h2 class="text-2xl font-bold">{{ title }}</h2>
-                <ul v-if="list" class="flex flex-col gap-2 m-10">
+                <ul v-if="list" class="flex flex-col gap-2 w-4/6 h-auto">
                     <div v-for="i in list.length" :key="i">
                         <li :class="i % 2 != 0 ? 'list-disc' : 'list-none'">
                             {{ list[i - 1] }}
                         </li>
                     </div>
                 </ul>
-                <div
-                    v-if="!list"
-                    class="grid grid-cols-2 grid-rows-3 gap-5 m-6"
-                >
+                <div v-if="!list" class="grid grid-cols-2 grid-rows-3 gap-5">
                     <img
                         v-for="i in 6"
                         :key="i"
                         :src="`/src/assets/cv/logos/${i}.png`"
-                        class="w-auto h-auto object-cover"
+                        class="w-auto h-32 object-cover"
                     />
                 </div>
             </div>
-            <div class="absolute w-full h-full back">
+            <div
+                class="absolute w-full h-full back flex flex-col items-center justify-evenly"
+            >
                 <h2 class="text-2xl font-bold">{{ title }}</h2>
                 <img
                     :src="`/src/assets/characters/${character}.png`"
@@ -91,12 +93,12 @@ export default defineComponent({
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 600px;
 }
 
 .card {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 600px;
     transition: transform 0.5s ease;
     transform-style: preserve-3d;
 }
