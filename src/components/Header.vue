@@ -1,4 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const goBottom = () => {
+    document.body.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth'
+    });
+};
+</script>
 
 <template>
     <div class="fixed w-full">
@@ -21,14 +28,14 @@
                     >Mes réalisations</span
                 >
             </RouterLink>
-            <RouterLink
-                to="/contact"
+            <button
                 class="m-4 text-lime-700 text-xl font-bold"
+                @click="goBottom"
             >
                 <span class="hover:text-black transition-all duration-600"
                     >Contact</span
                 >
-            </RouterLink>
+            </button>
         </div>
     </div>
 </template>

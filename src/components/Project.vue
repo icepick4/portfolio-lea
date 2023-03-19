@@ -48,7 +48,7 @@ export default defineComponent({
             {{ title }}
         </h1>
         <p
-            class="m-10 w-5/6 lg:w-1/3 text-center text-lg"
+            class="m-10 w-5/6 lg:w-2/3 text-center text-lg"
             v-html="description"
         ></p>
         <component :is="component" />

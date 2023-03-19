@@ -76,7 +76,7 @@ export default defineComponent({
         Je viens de Thonon-les-Bains en Haute-Savoie. 
         Je suis dynamique, drôle, souriante et toujours de bonne humeur ! 
         J'aime toucher à tout et découvrir de nouvelles choses."
-            link="/a-propos"
+            link="/cv"
             linkText="En savoir plus"
             id="section-2"
         />

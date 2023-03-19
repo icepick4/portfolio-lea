@@ -45,17 +45,22 @@ export default defineComponent({
             class="h-full rounded-[35px]"
         >
             <div
-                class="absolute w-full h-full front flex flex-col items-center justify-around"
+                class="absolute w-full h-full front flex flex-col items-center justify-center"
             >
-                <h2 class="text-3xl font-bold font-title">{{ title }}</h2>
-                <ul v-if="list" class="flex flex-col gap-2 w-4/6 h-auto">
+                <h2 class="text-3xl font-bold font-title absolute top-12">
+                    {{ title }}
+                </h2>
+                <ul v-if="list" class="flex flex-col gap-2 w-4/6 h-auto mt-16">
                     <div v-for="i in list.length" :key="i">
                         <li :class="i % 2 != 0 ? 'list-disc' : 'list-none'">
                             {{ list[i - 1] }}
                         </li>
                     </div>
                 </ul>
-                <div v-if="!list" class="grid grid-cols-2 grid-rows-3 gap-5">
+                <div
+                    v-if="!list"
+                    class="grid grid-cols-2 grid-rows-3 gap-5 mt-16"
+                >
                     <img
                         v-for="i in 6"
                         :key="i"
@@ -100,7 +105,7 @@ export default defineComponent({
 }
 
 .card.is-flipped {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) scale(0.9);
 }
 
 .card .front {
