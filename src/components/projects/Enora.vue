@@ -6,4 +6,14 @@ export default defineComponent({
 });
 </script>
 
-<template></template>
+<template>
+    <img src="/src/assets/enora/1.jpg" class="h-auto object-cover w-1/2" />
+    <div class="grid grid-cols-5 grid-rows-1 gap-5 w-1/2">
+        <img
+            v-for="i in 5"
+            :key="i"
+            :src="`/src/assets/enora/${i + 1}.jpg`"
+            class="w-auto h-auto object-cover"
+        />
+    </div>
+</template>

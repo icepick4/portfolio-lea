@@ -2,6 +2,7 @@
 import { defineComponent } from 'vue';
 import AffichesMinimalistes from './projects/AffichesMinimalistes.vue';
 import ChatMotion from './projects/ChatMotion.vue';
+import CocaColaLife from './projects/CocaColaLife.vue';
 import Enora from './projects/Enora.vue';
 import LeArtistes from './projects/LeArtistes.vue';
 import Polaroid from './projects/Polaroid.vue';
@@ -29,7 +30,8 @@ export default defineComponent({
         ChatMotion,
         AffichesMinimalistes,
         Enora,
-        Polaroid
+        Polaroid,
+        CocaColaLife
     }
 });
 </script>
