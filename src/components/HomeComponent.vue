@@ -48,11 +48,13 @@ export default defineComponent({
         <div
             class="flex flex-col items-center justify-center w-full text-white gap-10"
         >
-            <h1 class="text-4xl font-bold text-center">{{ title }}</h1>
+            <h1 class="text-5xl font-bold text-center leading-normal">
+                {{ title }}
+            </h1>
             <div v-if="link">
                 <RouterLink
                     :to="link"
-                    class="text-xl font-bold border-4 rounded-lg border-white p-2 mt-4 hover:bg-white hover:text-black transition-all duration-300"
+                    class="text-xl font-bold border-4 rounded-2xl border-white p-4 px-8 mt-4 hover:bg-white hover:text-black transition-all duration-300"
                 >
                     {{ linkText }}
                 </RouterLink>

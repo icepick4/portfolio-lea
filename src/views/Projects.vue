@@ -4,7 +4,17 @@ import { projects } from '../utils';
 export default defineComponent({
     name: 'Projects',
     setup() {
-        return { projects };
+        const colors = ['orange', 'pink', 'yellow'];
+        const randomizeColor = (id: number) => {
+            if (id % 3 === 0) {
+                return colors[0];
+            } else if (id % 3 === 1) {
+                return colors[1];
+            } else {
+                return colors[2];
+            }
+        };
+        return { projects, randomizeColor };
     }
 });
 </script>
@@ -22,18 +32,19 @@ export default defineComponent({
                     id: project.id
                 }
             }"
-            class="flex flex-col justify-between p-4 bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out hover:-translate-y-2 place-self-center w-full h-full"
+            class="flex flex-col justify-between p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out hover:-translate-y-2 place-self-center w-full h-full group hover:brightness-90"
+            :class="randomizeColor(project.id)"
         >
             <div>
                 <h1 class="text-2xl font-bold font-title">
                     {{ project.title }}
                 </h1>
-                <p class="text-gray-500" v-html="project.description"></p>
+                <p class="text-black" v-html="project.description"></p>
             </div>
             <div class="flex justify-end">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6 text-gray-500 hover:text-gray-700 transition duration-300 ease-in-out"
+                    class="h-6 w-6 text-gray-500 group-hover:text-gray-800 group-hover:scale-125 group-hover:rotate-90 transition duration-300 ease-in-out"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"

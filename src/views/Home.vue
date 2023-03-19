@@ -49,12 +49,12 @@ export default defineComponent({
     <div class="flex flex-col items-end fixed top-10 right-10 w-1/12">
         <div
             v-for="i in 3"
-            class="w-full flex min-w-[150px] items-end justify-end p-6"
+            class="w-full flex min-w-[150px] items-end justify-end p-6 group hover:cursor-pointer"
             :key="i"
             @click="scrollTo(i)"
         >
             <div
-                class="w-1/3 h-[5px] rounded-sm"
+                class="w-1/3 h-[5px] rounded-sm group-hover:w-4/6 transition-all duration-500 ease-in-out"
                 :class="[activatedIndex(i) ? 'bg-black w-4/6' : 'bg-white']"
             ></div>
         </div>

@@ -7,8 +7,10 @@ export default defineComponent({
 </script>
 
 <template>
-    <div class="grid grid-cols-4 grid-rows-2 gap-10 m-10">
-        <div class="grid grid-cols-3 gap-10 col-span-full">
+    <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 gap-10 m-10"
+    >
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 col-span-full">
             <img
                 v-for="i in 3"
                 :key="i"
@@ -25,9 +27,9 @@ export default defineComponent({
             class="w-full h-full object-cover"
         />
     </div>
-    <h1 class="text-2xl">Idées de déclinaison des illustrations</h1>
+    <h1 class="text-2xl text-center">Idées de déclinaison des illustrations</h1>
     <div
-        class="grid grid-cols-3 grid-row gap-5 m-10 xl:grid-cols-7 md:grid-cols-5 sm:grid-cols-3"
+        class="grid grid-cols-1 grid-row gap-5 m-10 xl:grid-cols-7 md:grid-cols-4 sm:grid-cols-2"
     >
         <img
             v-for="i in 7"

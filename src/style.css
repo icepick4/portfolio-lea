@@ -27,3 +27,27 @@ body {
 #app {
     height: 100%;
 }
+
+.orange {
+    background-color: #ff8c4f;
+}
+
+.orange:hover {
+    background-color: #ff8c4f;
+}
+
+.pink {
+    background-color: #fd2b58;
+}
+
+.pink:hover {
+    background-color: #fd2b58;
+}
+
+.yellow {
+    background-color: #ffe488;
+}
+
+.yellow:hover {
+    background-color: #ffe488;
+}

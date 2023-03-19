@@ -78,17 +78,6 @@ export default defineComponent({
 </template>
 
 <style scoped>
-.orange {
-    background-color: #ff8c4f;
-}
-
-.pink {
-    background-color: #fd2b58;
-}
-
-.yellow {
-    background-color: #ffe488;
-}
 .card-container {
     display: flex;
     justify-content: center;
