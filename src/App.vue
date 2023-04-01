@@ -31,7 +31,7 @@ export default defineComponent({
     <div class="flex flex-col h-screen">
         <!-- <Header /> -->
         <div
-            class="flex justify-center items-center flex-grow"
+            class="flex justify-center items-center flex-grow flex-col"
             :class="isHome ? 'pt-0' : 'pt-28'"
         >
             <RouterView />

@@ -49,7 +49,7 @@ export default defineComponent({
             class="flex flex-col items-center justify-center w-full text-white gap-10"
         >
             <h1
-                class="text-2xl lg:text-5xl font-bold text-center leading-normal"
+                class="text-2xl lg:text-5xl font-bold text-center lg:leading-snug"
                 v-html="title"
             ></h1>
             <div v-if="link">

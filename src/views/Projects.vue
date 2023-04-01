@@ -23,6 +23,12 @@ export default defineComponent({
 </script>
 
 <template>
+    <RouterLink
+        to="/"
+        class="text-xl font-bold border-4 rounded-2xl border-black p-2 px-4 mt-4 hover:bg-black hover:text-white transition-all duration-300 mb-16"
+    >
+        Retour à la l'accueil
+    </RouterLink>
     <div
         class="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-10 w-11/12 h-full content-center"
     >

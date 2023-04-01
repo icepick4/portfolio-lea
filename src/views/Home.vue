@@ -10,6 +10,7 @@ export default defineComponent({
     components: { HomeComponent },
     mounted() {
         document.body.addEventListener('scroll', this.handleScroll);
+        document.body.scrollTo(0, 0);
     },
     beforeDestroy() {
         document.body.removeEventListener('scroll', this.handleScroll);
