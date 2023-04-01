@@ -4,12 +4,12 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('./assets/fonts/Poppins-Light.ttf');
+    src: url('/portfolio-lea/assets/fonts/Poppins-Light.ttf');
 }
 
 @font-face {
     font-family: 'Title';
-    src: url('./assets/fonts/YesevaOne-Regular.ttf');
+    src: url('/portfolio-lea/assets/fonts/YesevaOne-Regular.ttf');
 }
 
 

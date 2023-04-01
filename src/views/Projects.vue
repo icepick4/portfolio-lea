@@ -15,6 +15,9 @@ export default defineComponent({
             }
         };
         return { projects, randomizeColor };
+    },
+    mounted() {
+        document.body.scrollTo(0, 0);
     }
 });
 </script>

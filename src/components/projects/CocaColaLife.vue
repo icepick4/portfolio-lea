@@ -13,7 +13,7 @@ export default defineComponent({
         <img
             v-for="i in 3"
             :key="i"
-            :src="`/assets/cocacola-life/${i}.jpg`"
+            :src="`/portfolio-lea/assets/cocacola-life/${i}.jpg`"
             class="w-full h-auto object-cover"
         />
     </div>
