@@ -61,7 +61,7 @@ export default defineComponent({
                 </RouterLink>
             </div>
             <img
-                :src="'/src/assets/characters/' + character + '.png'"
+                :src="'/assets/characters/' + character + '.png'"
                 alt="hero"
                 class="w-2/6 mx-auto lg:w-1/6"
             />

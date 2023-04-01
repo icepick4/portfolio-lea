@@ -64,7 +64,7 @@ export default defineComponent({
                     <img
                         v-for="i in 6"
                         :key="i"
-                        :src="`/src/assets/cv/logos/${i}.png`"
+                        :src="`/assets/cv/logos/${i}.png`"
                         class="w-auto h-32 object-cover"
                     />
                 </div>
@@ -74,7 +74,7 @@ export default defineComponent({
             >
                 <h2 class="text-3xl font-bold font-title">{{ title }}</h2>
                 <img
-                    :src="`/src/assets/characters/${character}.png`"
+                    :src="`/assets/characters/${character}.png`"
                     class="w-4/6 h-auto"
                 />
             </div>
