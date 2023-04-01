@@ -46,10 +46,12 @@ export default defineComponent({
 </script>
 
 <template>
-    <div class="flex flex-col items-end fixed top-10 right-10 w-1/12">
+    <div
+        class="flex flex-col items-end fixed top-0 right-1 md:top-10 md:right-10 w-1/12"
+    >
         <div
             v-for="i in 3"
-            class="w-full flex min-w-[150px] items-end justify-end p-6 group hover:cursor-pointer"
+            class="w-full flex min-w-[150px] items-end justify-end p-5 group hover:cursor-pointer"
             :key="i"
             @click="scrollTo(i)"
         >

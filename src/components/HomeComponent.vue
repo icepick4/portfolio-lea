@@ -49,13 +49,13 @@ export default defineComponent({
             class="flex flex-col items-center justify-center w-full text-white gap-10"
         >
             <h1
-                class="text-5xl font-bold text-center leading-normal"
+                class="text-2xl lg:text-5xl font-bold text-center leading-normal"
                 v-html="title"
             ></h1>
             <div v-if="link">
                 <RouterLink
                     :to="link"
-                    class="text-xl font-bold border-4 rounded-2xl border-white p-4 px-8 mt-4 hover:bg-white hover:text-black transition-all duration-300"
+                    class="text-lg lg:text-xl font-bold border-4 rounded-2xl border-white p-2 px-4 lg:px-8 mt-4 hover:bg-white hover:text-black transition-all duration-300"
                 >
                     {{ linkText }}
                 </RouterLink>
@@ -63,7 +63,7 @@ export default defineComponent({
             <img
                 :src="'/portfolio-lea/assets/characters/' + character + '.png'"
                 alt="hero"
-                class="w-2/6 mx-auto lg:w-1/6"
+                class="w-1/3 mx-auto lg:w-1/6"
             />
             <div
                 v-if="description != null"
@@ -72,7 +72,7 @@ export default defineComponent({
                 <p
                     v-for="(word, index) in splitText"
                     :key="index"
-                    class="text-xl text-center"
+                    class="text-base lg:text-xl text-center"
                 >
                     {{ word }}
                 </p>

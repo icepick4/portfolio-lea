@@ -29,7 +29,7 @@ export default defineComponent({
 
 <template>
     <div class="flex flex-col h-screen">
-        <Header />
+        <!-- <Header /> -->
         <div
             class="flex justify-center items-center flex-grow"
             :class="isHome ? 'pt-0' : 'pt-28'"
