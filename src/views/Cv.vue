@@ -9,13 +9,18 @@ export default defineComponent({
         return {
             skills
         };
+    },
+    mounted() {
+        document.body.scrollTo(0, 0);
     }
 });
 </script>
 
 <template>
     <div class="flex flex-col items-center gap-20 h-full mb-20">
-        <h1 class="text-6xl font-title text-center">Curriculum Vitae</h1>
+        <h1 class="text-5xl lg:text-7xl font-title text-center">
+            Curriculum Vitae
+        </h1>
         <a
             class="text-xl font-bold border-4 rounded-lg border-black p-2 mt-4 hover:bg-black hover:text-white transition-all duration-300 mb-16"
         >

@@ -25,7 +25,16 @@ export default defineComponent({
         const isHovered = ref(false);
         const colorClass = `${props.color}`;
 
-        return { isHovered, colorClass };
+        return { isHovered, colorClass, isClickable: false };
+    },
+    created() {
+        const isMobile =
+            /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+                navigator.userAgent
+            );
+        if (isMobile) {
+            this.isClickable = true;
+        }
     }
 });
 </script>
@@ -33,8 +42,9 @@ export default defineComponent({
 <template>
     <div
         class="flex justify-center items-center w-5/6 lg:w-full h-full"
-        @mouseover="isHovered = true"
-        @mouseleave="isHovered = false"
+        @mouseover="isClickable ? null : (isHovered = true)"
+        @mouseleave="isClickable ? null : (isHovered = false)"
+        @click="isClickable ? (isHovered = !isHovered) : null"
     >
         <div
             :class="{

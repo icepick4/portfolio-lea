@@ -57,7 +57,7 @@ export default defineComponent({
             @click="scrollTo(i)"
         >
             <div
-                class="w-1/3 h-[5px] rounded-sm group-hover:w-4/6 transition-all duration-500 ease-in-out"
+                class="w-1/3 h-[5px] rounded-sm md:group-hover:w-4/6 transition-all duration-500 ease-in-out"
                 :class="[activatedIndex(i) ? 'bg-black w-4/6' : 'bg-white']"
             ></div>
         </div>

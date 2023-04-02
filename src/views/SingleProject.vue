@@ -15,7 +15,10 @@ export default defineComponent({
         const id: number = parseInt(route.params.id);
         return { id, projects };
     },
-    components: { Project }
+    components: { Project },
+    mounted() {
+        document.body.scrollTo(0, 0);
+    }
 });
 </script>
 
