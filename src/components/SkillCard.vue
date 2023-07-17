@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { computed, ref } from 'vue';
 
 const props = defineProps<{
     title: string;
@@ -10,14 +10,18 @@ const props = defineProps<{
 
 const isHovered = ref(false);
 const colorClass = `${props.color}`;
-const isClickable = ref(false);
-if (
-    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-        navigator.userAgent
-    )
-) {
-    isClickable.value = true;
-}
+
+const isClickable = computed(() => {
+    if (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+            navigator.userAgent
+        )
+    ) {
+        return true;
+    } else {
+        return false;
+    }
+});
 </script>
 
 <template>
@@ -25,7 +29,7 @@ if (
         class="flex justify-center items-center w-5/6 lg:w-full h-full"
         @mouseover="isClickable ? null : (isHovered = true)"
         @mouseleave="isClickable ? null : (isHovered = false)"
-        @click="isHovered = !isHovered"
+        @click="isClickable ? (isHovered = !isHovered) : null"
     >
         <div
             :class="{
