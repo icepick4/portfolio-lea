@@ -1,5 +1,5 @@
-<script lang="ts">
-import { defineComponent } from 'vue';
+<script setup lang="ts">
+import type { Component } from 'vue';
 import AffichesMinimalistes from './projects/AffichesMinimalistes.vue';
 import ChatMotion from './projects/ChatMotion.vue';
 import CocaColaLife from './projects/CocaColaLife.vue';
@@ -9,33 +9,22 @@ import Logofolio from './projects/Logofolio.vue';
 import Polaroid from './projects/Polaroid.vue';
 import VivreDAmour from './projects/VivreDAmour.vue';
 
-export default defineComponent({
-    name: 'Project',
-    props: {
-        title: {
-            type: String,
-            required: true
-        },
-        description: {
-            type: String,
-            required: true
-        },
-        component: {
-            type: String,
-            required: true
-        }
-    },
-    components: {
-        LeArtistes,
-        VivreDAmour,
-        ChatMotion,
-        AffichesMinimalistes,
-        Enora,
-        Polaroid,
-        CocaColaLife,
-        Logofolio
-    }
-});
+defineProps<{
+    title: string;
+    description: string;
+    component: string;
+}>();
+
+const components: Record<string, Component> = {
+    AffichesMinimalistes,
+    ChatMotion,
+    CocaColaLife,
+    Enora,
+    LeArtistes,
+    Logofolio,
+    Polaroid,
+    VivreDAmour
+};
 </script>
 
 <template>
@@ -51,6 +40,6 @@ export default defineComponent({
             class="m-10 w-5/6 lg:w-2/3 text-center text-lg"
             v-html="description"
         ></p>
-        <component :is="component" />
+        <component :is="components[component]" />
     </div>
 </template>

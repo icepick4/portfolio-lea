@@ -12,6 +12,16 @@
     src: url('/portfolio-lea/assets/fonts/YesevaOne-Regular.ttf');
 }
 
+:root {
+    --swiper-pagination-color: #000;
+    --swiper-pagination-bullet-size: 15px;
+    --swiper-pagination-bullet-width: 15px;
+    --swiper-pagination-bullet-height: 15px;
+    --swiper-pagination-bullet-inactive-color: #ffffff;
+    --swiper-pagination-bullet-inactive-opacity: 0.75;
+    --swiper-pagination-bullet-horizontal-gap: 12px;
+}
+
 
 html,
 body {
@@ -20,7 +30,11 @@ body {
     height: 100vh;
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
-    background-color: #fff;
+    background: linear-gradient(to right,
+            #94dcaa 0%,
+            #94dcaa 50%,
+            #7fcdc5 50%,
+            #7fcdc5 100%);
 }
 
 
