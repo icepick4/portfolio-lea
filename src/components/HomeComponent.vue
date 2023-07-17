@@ -1,41 +1,18 @@
-<script lang="ts">
-import { computed, defineComponent } from 'vue';
+<script setup lang="ts">
+import { computed } from 'vue';
 
-export default defineComponent({
-    name: 'HomeComponent',
-    props: {
-        color: {
-            type: String,
-            required: true
-        },
-        character: {
-            type: String,
-            required: true
-        },
-        title: {
-            type: String,
-            required: true
-        },
-        description: {
-            type: String,
-            required: false
-        },
-        link: {
-            type: String,
-            required: false
-        },
-        linkText: {
-            type: String,
-            required: false
-        }
-    },
-    setup(props) {
-        const splitText = computed(() => {
-            if (props.description != null) {
-                return props.description.split('\n');
-            }
-        });
-        return { splitText };
+const props = defineProps<{
+    color: string;
+    character: string;
+    title: string;
+    description?: string;
+    link?: string;
+    linkText?: string;
+}>();
+
+const splitText = computed(() => {
+    if (props.description != null) {
+        return props.description.split('\n');
     }
 });
 </script>

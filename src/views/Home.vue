@@ -36,25 +36,29 @@ const modules = [Pagination];
 </script>
 
 <template>
-    <swiper
-        :slides-per-view="1"
-        :pagination="{
-            clickable: true
-        }"
-        :grabCursor="true"
-        :modules="modules"
-        class="w-full h-full"
-    >
-        <swiper-slide v-for="(item, index) in items" :key="index">
-            <HomeComponent
-                :color="item.color"
-                :character="item.character"
-                :title="item.title"
-                :description="item.description"
-                :link="item.link"
-                :linkText="item.linkText"
-                :id="item.id"
-            />
-        </swiper-slide>
-    </swiper>
+    <div class="flex flex-row w-full h-full overflow-hidden">
+        <div class="w-1/2 h-full bg-[#94dcaa] absolute"></div>
+        <swiper
+            :slides-per-view="1"
+            :pagination="{
+                clickable: true
+            }"
+            :grabCursor="true"
+            :modules="modules"
+            class="w-full h-full"
+        >
+            <swiper-slide v-for="(item, index) in items" :key="index">
+                <HomeComponent
+                    :color="item.color"
+                    :character="item.character"
+                    :title="item.title"
+                    :description="item.description"
+                    :link="item.link"
+                    :linkText="item.linkText"
+                    :id="item.id"
+                />
+            </swiper-slide>
+        </swiper>
+        <div class="w-1/2 h-full bg-[#7fcdc5] absolute right-0"></div>
+    </div>
 </template>

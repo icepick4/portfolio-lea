@@ -1,24 +1,21 @@
-<script lang="ts">
-import { defineComponent } from 'vue';
+<script setup lang="ts">
+import { onMounted } from 'vue';
 import { projects } from '../utils';
-export default defineComponent({
-    name: 'Projects',
-    setup() {
-        const colors = ['orange', 'pink', 'yellow'];
-        const randomizeColor = (id: number) => {
-            if (id % 3 === 0) {
-                return colors[0];
-            } else if (id % 3 === 1) {
-                return colors[1];
-            } else {
-                return colors[2];
-            }
-        };
-        return { projects, randomizeColor };
-    },
-    mounted() {
-        document.body.scrollTo(0, 0);
+
+const colors = ['orange', 'pink', 'yellow'];
+
+const randomizeColor = (id: number) => {
+    if (id % 3 === 0) {
+        return colors[0];
+    } else if (id % 3 === 1) {
+        return colors[1];
+    } else {
+        return colors[2];
     }
+};
+
+onMounted(() => {
+    document.body.scrollTo(0, 0);
 });
 </script>
 

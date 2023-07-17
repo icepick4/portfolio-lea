@@ -1,24 +1,19 @@
-<script lang="ts">
-import { defineComponent } from 'vue';
+<script setup lang="ts">
+import { onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 import Project from '../components/Project.vue';
 import { projects } from '../utils';
-export default defineComponent({
-    name: 'SingleProject',
-    setup() {
-        const route = useRoute();
-        if (!route.params.id) {
-            throw new Error('No id provided');
-        } else if (typeof route.params.id !== 'string') {
-            throw new Error('Id is not a string');
-        }
-        const id: number = parseInt(route.params.id);
-        return { id, projects };
-    },
-    components: { Project },
-    mounted() {
-        document.body.scrollTo(0, 0);
-    }
+
+const route = useRoute();
+if (!route.params.id) {
+    throw new Error('No id provided');
+} else if (typeof route.params.id !== 'string') {
+    throw new Error('Id is not a string');
+}
+const id: number = parseInt(route.params.id);
+
+onMounted(() => {
+    document.body.scrollTo(0, 0);
 });
 </script>
 

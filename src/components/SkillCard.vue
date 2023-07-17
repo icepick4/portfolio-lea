@@ -1,42 +1,23 @@
-<script lang="ts">
-import { defineComponent, ref } from 'vue';
+<script setup lang="ts">
+import { ref } from 'vue';
 
-export default defineComponent({
-    name: 'SkillCard',
-    props: {
-        title: {
-            type: String,
-            required: true
-        },
-        list: {
-            type: Array as () => string[] | null,
-            required: true
-        },
-        color: {
-            type: String,
-            required: true
-        },
-        character: {
-            type: String,
-            required: true
-        }
-    },
-    setup(props) {
-        const isHovered = ref(false);
-        const colorClass = `${props.color}`;
+const props = defineProps<{
+    title: string;
+    list: string[] | null;
+    color: string;
+    character: string;
+}>();
 
-        return { isHovered, colorClass, isClickable: false };
-    },
-    created() {
-        const isMobile =
-            /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-                navigator.userAgent
-            );
-        if (isMobile) {
-            this.isClickable = true;
-        }
-    }
-});
+const isHovered = ref(false);
+const colorClass = `${props.color}`;
+const isClickable = ref(false);
+if (
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+    )
+) {
+    isClickable.value = true;
+}
 </script>
 
 <template>
@@ -44,7 +25,7 @@ export default defineComponent({
         class="flex justify-center items-center w-5/6 lg:w-full h-full"
         @mouseover="isClickable ? null : (isHovered = true)"
         @mouseleave="isClickable ? null : (isHovered = false)"
-        @click="isClickable ? (isHovered = !isHovered) : null"
+        @click="isHovered = !isHovered"
     >
         <div
             :class="{

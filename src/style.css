@@ -30,11 +30,7 @@ body {
     height: 100vh;
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right,
-            #94dcaa 0%,
-            #94dcaa 50%,
-            #7fcdc5 50%,
-            #7fcdc5 100%);
+    background: #f5f5f5;
 }
 
 
