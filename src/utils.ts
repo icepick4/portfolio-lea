@@ -3,6 +3,8 @@ interface Project {
     title: string;
     description: string;
     component: string;
+    image: string;
+    themes: string[];
 }
 
 interface Skill {
@@ -16,60 +18,103 @@ interface Skill {
 export const projects: Project[] = [
     {
         id: 1,
-        title: 'Enora',
+        title: 'Veggy Hunt',
         description:
-            'Shooting photo improvisée dans une laverie et retouche sur <b>Photoshop</b>.',
-        component: 'Enora'
+            'Créer un service de livraison de repas en kit dont les produits proviendraient de fermes verticales ou de producteurs locaux en ciblant la génération Z qui sort tout juste du foyer familial et qui se cherche un mode de consommation personnel.',
+        component: 'VeggyHunt',
+        image: 'veggy-hunt',
+        themes: [
+            "Campagne d'affichage",
+            'Application',
+            'Campagne réseaux sociaux'
+        ]
     },
     {
         id: 2,
-        title: 'LéArtistes',
+        title: 'Boomerang',
         description:
-            'Création de personnages pour mon identité visuelle sur <b>Illustrator</b>.',
-        component: 'LeArtistes'
+            'Par groupes de 2, imaginez l’identité de la salle de spectacle « boomerang », une salle de concerts contemporains qui accueille des artistes émergents.',
+        component: 'Boomerang',
+        image: 'boomerang',
+        themes: ['Site web', "Campagne d'affichage", 'Stickers']
     },
+
     {
         id: 3,
-        title: 'Polaroid',
-        description:
-            "Rebranding pour la marque Polaroid à l'occasion de la sortie d'un nouveau concept, le Polaroid X2 permettant d'imprimer un instant comme les anciens et la nouveauté est que la photo s'envoie instantanément au téléphone connecté à l'appareil photo.</br></br> Utilisation d'<b>Illustrator</b>, <b>XD</b> et <b>After effect</b>.",
-        component: 'Polaroid'
-    },
-    {
-        id: 4,
-        title: "Vivre d'amour",
-        description:
-            "Réalisations d'affiches illustratives pour la Saint Valentin crée sur <b>Illustrator</b>.",
-        component: 'VivreDAmour'
-    },
-    {
-        id: 5,
-        title: 'Affiches minimalistes',
-        description:
-            "Création d'une campagne de publicité minimaliste, humoristique et décalée pour du dentifrice et de la nourriture pour chat réalisé sur <b>Indesign</b> et <b>Photoshop</b>.",
-        component: 'AffichesMinimalistes'
-    },
-    {
-        id: 6,
-        title: 'Chat motion',
-        description:
-            'Projet en motion design sous <b>Illustrator</b> et <b>After Effect</b>.</br>Création de notre illustration et petite animation.',
-        component: 'ChatMotion'
-    },
-    {
-        id: 7,
-        title: 'CocaCola life',
-        description:
-            "Campagne d'affichage fictif pour la marque coca-cola life réalisée sur <b>Indesign</b>.",
-        component: 'CocaColaLife'
-    },
-    {
-        id: 8,
         title: 'Logofolio',
         description:
             'Logos réalisés pour des entreprises, projets de cours ou travaux personnels crée sous <b>Illustrator</b>.',
-        component: 'Logofolio'
+        component: 'Logofolio',
+        image: 'logofolio',
+        themes: ['Réflexion graphique']
+    },
+    // {
+    //     id: 3,
+    //     title: 'LéArtistes',
+    //     description:
+    //         'Création de personnages pour mon identité visuelle sur <b>Illustrator</b>.',
+    //     component: 'LeArtistes',
+    //     image: 'leartistes'
+    // },
+    {
+        id: 4,
+        title: 'Humour & Minimalisme',
+        description:
+            "Création d'une campagne de publicité minimaliste, humoristique et décalée pour du dentifrice et de la nourriture pour chat réalisé sur <b>Indesign</b> et <b>Photoshop</b>.",
+        component: 'AffichesMinimalistes',
+        image: 'affiches-minimalistes',
+        themes: ['Montage photo', "Campagne d'affichage"]
+    },
+    {
+        id: 5,
+        title: 'Fanzine',
+        description: 'Fanzine',
+        component: 'Fanzine',
+        image: 'fanzine',
+        themes: ['Réflexion graphique']
+    },
+    {
+        id: 6,
+        title: 'Enora',
+        description:
+            'Shooting photo improvisée dans une laverie et retouche sur <b>Photoshop</b>.',
+        component: 'Enora',
+        image: 'enora',
+        themes: ['Direction artistique', 'Photographie', 'Retouche']
     }
+    // {
+    //     id: 4,
+    //     title: 'Polaroid',
+    //     description:
+    //         "Rebranding pour la marque Polaroid à l'occasion de la sortie d'un nouveau concept, le Polaroid X2 permettant d'imprimer un instant comme les anciens et la nouveauté est que la photo s'envoie instantanément au téléphone connecté à l'appareil photo.</br></br> Utilisation d'<b>Illustrator</b>, <b>XD</b> et <b>After effect</b>.",
+    //     component: 'Polaroid',
+    //     image: 'polaroid'
+    // },
+    // {
+    //     id: 5,
+    //     title: "Vivre d'amour",
+    //     description:
+    //         "Réalisations d'affiches illustratives pour la Saint Valentin crée sur <b>Illustrator</b>.",
+    //     component: 'VivreDAmour',
+    //     image: 'vivre-d-amour'
+    // },
+
+    // {
+    //     id: 7,
+    //     title: 'Chat motion',
+    //     description:
+    //         'Projet en motion design sous <b>Illustrator</b> et <b>After Effect</b>.</br>Création de notre illustration et petite animation.',
+    //     component: 'ChatMotion',
+    //     image: 'chatmotion'
+    // },
+    // {
+    //     id: 8,
+    //     title: 'CocaCola life',
+    //     description:
+    //         "Campagne d'affichage fictif pour la marque coca-cola life réalisée sur <b>Indesign</b>.",
+    //     component: 'CocaColaLife',
+    //     image: 'cocacola-life'
+    // }
 ];
 
 export const skills: Skill[] = [
@@ -96,14 +141,14 @@ export const skills: Skill[] = [
             `
         ],
         color: 'yellow',
-        character: 'chignons'
+        character: 'diplome'
     },
     {
         id: 2,
         title: 'Compétences',
         list: null,
         color: 'pink',
-        character: 'couronne'
+        character: 'chignon'
     },
     {
         id: 3,
@@ -121,6 +166,6 @@ export const skills: Skill[] = [
             "Gold'N power Armoy"
         ],
         color: 'orange',
-        character: 'ondule'
+        character: 'lunettes'
     }
 ];

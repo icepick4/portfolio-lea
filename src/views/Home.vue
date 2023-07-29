@@ -7,24 +7,22 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import HomeComponent from '../components/HomeComponent.vue';
 const items = [
     {
-        color: 'green',
-        character: 'ondule',
-        title: "<span class='font-title'>Bonjour</span> !</br> moi c'est Léa",
+        color: 'blue',
+        character: 'P1',
+        title: "<span class='font-title'>Bonjour</span> !</br> <p class='text-2xl'>moi c'est Léa</p>",
         id: 'section-1'
     },
     {
-        color: 'red',
-        character: 'chignons',
-        title: "<span class='font-title'>Il était une fois, moi ... </span>",
-        description:
-            "Bonjour moi c'est Léa. Je viens de Thonon-les-Bains en Haute-Savoie. Je suis dynamique, drôle, souriante et toujours de bonne humeur ! J'aime toucher à tout et découvrir de nouvelles choses.",
+        color: 'pink',
+        character: 'P2',
+        title: "<span class='font-title'>Envie d'une stagiaire surmotivée ?</span>",
         link: '/cv',
-        linkText: 'En savoir plus',
+        linkText: 'Mon parcours',
         id: 'section-2'
     },
     {
-        color: 'blue',
-        character: 'couronne',
+        color: 'green',
+        character: 'P3',
         title: "<span class='font-title'>A la découverte de mon univers</span>",
         link: '/travaux',
         linkText: 'Voir mes réalisations',
@@ -36,29 +34,31 @@ const modules = [Pagination];
 </script>
 
 <template>
-    <div class="flex flex-row w-full h-full overflow-hidden">
-        <div class="w-1/2 h-full bg-[#94dcaa] absolute"></div>
+    <div class="w-full h-full overflow-hidden relative z-[4]">
+        <div class="w-1/2 h-full bg-blue absolute"></div>
+        <div class="w-1/2 h-full bg-green absolute right-0"></div>
         <swiper
             :slides-per-view="1"
-            :pagination="{
-                clickable: true
-            }"
+            :pagination="{ clickable: true }"
             :grabCursor="true"
             :modules="modules"
-            class="w-full h-full"
+            class="w-full h-full flex items-center justify-center z-10"
         >
-            <swiper-slide v-for="(item, index) in items" :key="index">
+            <swiper-slide v-for="item in items" :key="item.id">
                 <HomeComponent
                     :color="item.color"
                     :character="item.character"
                     :title="item.title"
-                    :description="item.description"
                     :link="item.link"
                     :linkText="item.linkText"
                     :id="item.id"
                 />
+                <img
+                    :src="'/characters/' + item.character + '.png'"
+                    alt="hero"
+                    class="w-2/5 sm:w-1/3 mx-auto lg:w-64 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
+                />
             </swiper-slide>
         </swiper>
-        <div class="w-1/2 h-full bg-[#7fcdc5] absolute right-0"></div>
     </div>
 </template>

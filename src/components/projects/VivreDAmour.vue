@@ -13,8 +13,8 @@ export default defineComponent({
         <img
             v-for="i in 8"
             :key="i"
-            :src="`/portfolio-lea/assets/vivre-d-amour/${i}.jpg`"
-            class="w--auto h-auto object-cover col-span-1"
+            :src="`/projects/vivre-d-amour/${i}.jpg`"
+            class="w-auto h-auto object-cover col-span-1"
         />
     </div>
 </template>

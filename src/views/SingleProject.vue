@@ -25,6 +25,7 @@ onMounted(() => {
             :title="projects[id - 1].title"
             :description="projects[id - 1].description"
             :component="projects[id - 1].component"
+            :themes="projects[id - 1].themes"
         />
         <RouterLink
             to="/travaux"

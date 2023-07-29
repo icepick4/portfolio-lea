@@ -14,7 +14,7 @@ export default defineComponent({
             <img
                 v-for="i in 3"
                 :key="i"
-                :src="`/portfolio-lea/assets/leartistes/${i}.jpg`"
+                :src="`/projects/leartistes/${i}.jpg`"
                 alt="placeholder"
                 class="w-full h-full object-cover"
             />
@@ -22,7 +22,7 @@ export default defineComponent({
         <img
             v-for="i in 4"
             :key="i"
-            :src="`/portfolio-lea/assets/leartistes/${i + 3}.jpg`"
+            :src="`/projects/leartistes/${i + 3}.jpg`"
             alt="placeholder"
             class="w-full h-full object-cover"
         />
@@ -34,7 +34,7 @@ export default defineComponent({
         <img
             v-for="i in 7"
             :key="i"
-            :src="`/portfolio-lea/assets/leartistes/ideas/${i}.jpg`"
+            :src="`/projects/leartistes/ideas/${i}.jpg`"
             alt="placeholder"
             class="w-full h-full object-cover"
         />

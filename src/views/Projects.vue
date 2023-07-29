@@ -20,14 +20,16 @@ onMounted(() => {
 </script>
 
 <template>
-    <RouterLink
-        to="/"
-        class="text-xl font-bold border-4 rounded-2xl border-black p-2 px-4 mt-4 hover:bg-black hover:text-white transition-all duration-300 mb-16"
-    >
-        Retour à la l'accueil
-    </RouterLink>
+    <div class="flex flex-col gap-10 w-full justify-center items-center mb-10">
+        <h1 class="font-title text-6xl">Réalisations</h1>
+        <p class="text-gray-500 font-medium text-lg w-1/2 text-center">
+            Trouvez une sélection de projets réalisés tout au long de mon
+            parcours (design graphique, photographie, identité visuelle...)
+        </p>
+    </div>
+
     <div
-        class="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-10 w-11/12 h-full content-center"
+        class="grid grid-cols-2 md:grid-cols-3 w-5/6 h-full content-center gap-10 mb-10"
     >
         <RouterLink
             v-for="project in projects"
@@ -38,31 +40,13 @@ onMounted(() => {
                     id: project.id
                 }
             }"
-            class="flex flex-col justify-between p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out hover:-translate-y-2 place-self-center w-full h-full group hover:brightness-90"
+            class="rounded-lg w-full h-full"
             :class="randomizeColor(project.id)"
         >
-            <div>
-                <h1 class="text-2xl font-bold font-title">
-                    {{ project.title }}
-                </h1>
-                <p class="text-black" v-html="project.description"></p>
-            </div>
-            <div class="flex justify-end">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6 text-gray-500 group-hover:text-gray-800 group-hover:scale-125 group-hover:rotate-90 transition duration-300 ease-in-out"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9 5l7 7-7 7"
-                    />
-                </svg>
-            </div>
+            <img
+                :src="`/projects/${project.image}/logo.png`"
+                class="w-full h-full object-contain mx-auto"
+            />
         </RouterLink>
     </div>
 </template>

@@ -9,7 +9,9 @@ const props = defineProps<{
 }>();
 
 const isHovered = ref(false);
-const colorClass = `${props.color}`;
+const colorClass = `bg-${props.color}`;
+
+const _ = ['bg-orange', 'bg-yellow', 'bg-pink'];
 
 const isClickable = computed(() => {
     if (
@@ -64,7 +66,7 @@ const isClickable = computed(() => {
                     <img
                         v-for="i in 6"
                         :key="i"
-                        :src="`/portfolio-lea/assets/cv/logos/${i}.png`"
+                        :src="`/cv/logos/${i}.png`"
                         class="w-auto h-24 lg:h-32 object-cover"
                     />
                 </div>
@@ -76,7 +78,7 @@ const isClickable = computed(() => {
                     {{ title }}
                 </h2>
                 <img
-                    :src="`/portfolio-lea/assets/characters/${character}.png`"
+                    :src="`/characters/${character}.png`"
                     class="w-4/6 h-auto"
                 />
             </div>

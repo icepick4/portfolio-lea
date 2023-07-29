@@ -15,16 +15,13 @@ export default defineComponent({
             class="w-full h-full object-cover"
             playsinline
         >
-            <source
-                :src="'/portfolio-lea/assets/polaroid/video.mp4'"
-                type="video/mp4"
-            />
+            <source :src="'/projects/polaroid/video.mp4'" type="video/mp4" />
         </video>
         <div class="grid grid-cols-1 grid-rows-1 gap-5 w-full sm:grid-cols-2">
             <img
                 v-for="i in 2"
                 :key="i"
-                :src="`/portfolio-lea/assets/polaroid/${i}.jpg`"
+                :src="`/projects/polaroid/${i}.jpg`"
                 class="w-auto h-auto object-cover"
             />
         </div>

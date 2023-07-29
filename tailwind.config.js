@@ -4,7 +4,9 @@ module.exports = {
     theme: {
         extend: {
             backgroundImage: {
-                homebg: "url('/src/assets/bg/home-bg.jpg')"
+                green: "url('/bg/green.png')",
+                pink: "url('/bg/pink.png')",
+                blue: "url('/bg/blue.png')"
             },
             fontFamily: {
                 title: "'Title'"

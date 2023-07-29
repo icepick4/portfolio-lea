@@ -4,12 +4,12 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('/portfolio-lea/assets/fonts/Poppins-Light.ttf');
+    src: url('/fonts/Poppins-Light.ttf');
 }
 
 @font-face {
     font-family: 'Title';
-    src: url('/portfolio-lea/assets/fonts/YesevaOne-Regular.ttf');
+    src: url('/fonts/YesevaOne-Regular.ttf');
 }
 
 :root {
@@ -18,8 +18,8 @@
     --swiper-pagination-bullet-width: 15px;
     --swiper-pagination-bullet-height: 15px;
     --swiper-pagination-bullet-inactive-color: #ffffff;
-    --swiper-pagination-bullet-inactive-opacity: 0.75;
-    --swiper-pagination-bullet-horizontal-gap: 12px;
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-bullet-horizontal-gap: 20px;
 }
 
 
@@ -36,28 +36,4 @@ body {
 
 #app {
     height: 100%;
-}
-
-.orange {
-    background-color: #ff8c4f;
-}
-
-.orange:hover {
-    background-color: #ff8c4f;
-}
-
-.pink {
-    background-color: #fd2b58;
-}
-
-.pink:hover {
-    background-color: #fd2b58;
-}
-
-.yellow {
-    background-color: #ffe488;
-}
-
-.yellow:hover {
-    background-color: #ffe488;
 }
