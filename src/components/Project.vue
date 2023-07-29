@@ -45,13 +45,15 @@ const components: Record<string, Component> = {
             class="m-10 w-5/6 lg:w-2/3 text-center text-lg"
             v-html="description"
         ></p>
-        <div class="flex flex-row gap-10 mb-10">
+        <div class="flex flex-col lg:flex-row gap-10 mb-10">
             <div
                 class="border-2 border-black rounded-lg"
                 v-for="theme in themes"
                 :key="theme"
             >
-                <p class="p-1 px-5 text-gray-500 font-semibold">{{ theme }}</p>
+                <p class="p-1 sm:px-5 text-gray-500 font-semibold text-center">
+                    {{ theme }}
+                </p>
             </div>
         </div>
         <component :is="components[component]" />

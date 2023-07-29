@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue';
 import { RouterView, useRoute } from 'vue-router';
+import Header from './components/Header.vue';
 
 const route = useRoute();
 const isHome = ref(route.path === '/');
@@ -14,7 +15,7 @@ watch(
 
 <template>
     <div class="flex flex-col h-screen">
-        <!-- <Header /> -->
+        <Header />
         <div
             class="flex justify-center items-center flex-grow flex-col"
             :class="isHome ? 'pt-0' : 'pt-28'"

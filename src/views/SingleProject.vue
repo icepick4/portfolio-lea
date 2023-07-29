@@ -29,7 +29,7 @@ onMounted(() => {
         />
         <RouterLink
             to="/travaux"
-            class="text-xl font-bold border-4 rounded-2xl border-black p-2 px-4 mt-4 hover:bg-black hover:text-white transition-all duration-300 mb-16"
+            class="text-xl font-bold border-2 rounded-2xl border-black p-2 px-4 mt-4 hover:bg-black hover:text-white transition-all duration-300 mb-16"
         >
             Retour aux réalisations
         </RouterLink>
