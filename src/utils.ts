@@ -60,7 +60,7 @@ export const projects: Project[] = [
         id: 4,
         title: 'Humour & Minimalisme',
         description:
-            "Création d'une campagne de publicité minimaliste, humoristique et décalée pour du dentifrice et de la nourriture pour chat réalisé sur <b>Indesign</b> et <b>Photoshop</b>.",
+            'Par groupe de 2, imaginez une campagne de publicité minimaliste et humoristique pour du dentifrice et de la nourriture pour chat.',
         component: 'AffichesMinimalistes',
         image: 'affiches-minimalistes',
         themes: ['Montage photo', "Campagne d'affichage"]
