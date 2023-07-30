@@ -40,7 +40,7 @@ onMounted(() => {
                     id: project.id
                 }
             }"
-            class="rounded-lg w-full h-full"
+            class="rounded-lg w-full h-full hover:scale-105 transform transition-all duration-300"
             :class="randomizeColor(project.id)"
         >
             <img

@@ -52,11 +52,14 @@ const isClickable = computed(() => {
                 <ul v-if="list" class="flex flex-col gap-2 w-4/6 h-auto mt-16">
                     <div v-for="i in list.length" :key="i">
                         <li
-                            :class="i % 2 != 0 ? 'list-disc' : 'list-none'"
-                            class="text-sm lg:text-base"
-                        >
-                            {{ list[i - 1] }}
-                        </li>
+                            :class="
+                                i % 2 != 0
+                                    ? 'font-bold text-lg'
+                                    : 'font-normal text-base'
+                            "
+                            class="text-center"
+                            v-html="list[i - 1]"
+                        ></li>
                     </div>
                 </ul>
                 <div

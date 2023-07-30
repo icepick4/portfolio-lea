@@ -124,20 +124,20 @@ export const skills: Skill[] = [
         list: [
             'Bachelor Design Graphique',
             `Brassart Annecy
-            2021/2024
+            <b>2021/2024</b>
             Design graphique, Design de packaging, Webdesign, Publicité, Direction artistique.
             Prendre en charge un projet dans sa globalité.
             `,
             'Bac Pro RPIP',
-            `Option Production Graphique
+            `<b>Option Production Graphique</b>
             Lycée André Argouges, Grenoble  
-            2018/2021
+            <b>2018/2021</b>
             Apprentissage des techniques et outils des 
             industries graphiques
             `,
             'BEP Industrie Graphique',
             `Lycée André Argouges, Grenoble 
-            2019/2020
+            <b>2019/2020</b>
             `
         ],
         color: 'yellow',
@@ -147,7 +147,7 @@ export const skills: Skill[] = [
         id: 2,
         title: 'Compétences',
         list: null,
-        color: 'pink',
+        color: 'orange',
         character: 'chignon'
     },
     {
@@ -165,7 +165,7 @@ export const skills: Skill[] = [
             'Entreprise familiale',
             "Gold'N power Armoy"
         ],
-        color: 'orange',
+        color: 'pink',
         character: 'lunettes'
     }
 ];

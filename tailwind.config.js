@@ -6,7 +6,9 @@ module.exports = {
             backgroundImage: {
                 green: "url('/bg/green.png')",
                 pink: "url('/bg/pink.png')",
-                blue: "url('/bg/blue.png')"
+                blue: "url('/bg/blue.png')",
+                yellow: "url('/bg/yellow.png')",
+                orange: "url('/bg/orange.png')"
             },
             fontFamily: {
                 title: "'Title'"
