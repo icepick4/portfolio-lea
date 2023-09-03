@@ -13,7 +13,7 @@ const items = [
         id: 'section-1'
     },
     {
-        color: 'pink',
+        color: 'purple',
         character: 'P2',
         title: "<span class='font-title'>Envie d'une stagiaire surmotivée ?</span>",
         link: '/cv',
@@ -23,7 +23,7 @@ const items = [
     {
         color: 'green',
         character: 'P3',
-        title: "<span class='font-title'>A la découverte de mon univers</span>",
+        title: "<span class='font-title'>À la découverte de mon univers</span>",
         link: '/travaux',
         linkText: 'Voir mes réalisations',
         id: 'section-3'

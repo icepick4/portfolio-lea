@@ -5,6 +5,7 @@ import Boomerang from './projects/Boomerang.vue';
 import ChatMotion from './projects/ChatMotion.vue';
 import CocaColaLife from './projects/CocaColaLife.vue';
 import Enora from './projects/Enora.vue';
+import Fanzine from './projects/Fanzine.vue';
 import LeArtistes from './projects/LeArtistes.vue';
 import Logofolio from './projects/Logofolio.vue';
 import Polaroid from './projects/Polaroid.vue';
@@ -28,7 +29,8 @@ const components: Record<string, Component> = {
     Polaroid,
     VivreDAmour,
     VeggyHunt,
-    Boomerang
+    Boomerang,
+    Fanzine
 };
 </script>
 

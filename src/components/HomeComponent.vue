@@ -7,7 +7,7 @@ const props = defineProps<{
     linkText?: string;
 }>();
 
-const _ = ['bg-blue', 'bg-green', 'bg-pink'];
+const _ = ['bg-blue', 'bg-green', 'bg-purple'];
 </script>
 
 <template>

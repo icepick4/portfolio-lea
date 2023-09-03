@@ -68,10 +68,11 @@ export const projects: Project[] = [
     {
         id: 5,
         title: 'Fanzine',
-        description: 'Fanzine',
+        description:
+            "Création d'un Fanzine sur le thème des troubles. J'ai choisi le trouble de l'hyperphagie car on a tendance à ne pas le connaître.",
         component: 'Fanzine',
         image: 'fanzine',
-        themes: ['Réflexion graphique']
+        themes: ['Réflexion graphique', 'Linogravure', 'Collage']
     },
     {
         id: 6,

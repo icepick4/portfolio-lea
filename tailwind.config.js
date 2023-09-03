@@ -8,7 +8,8 @@ module.exports = {
                 pink: "url('/bg/pink.png')",
                 blue: "url('/bg/blue.png')",
                 yellow: "url('/bg/yellow.png')",
-                orange: "url('/bg/orange.png')"
+                orange: "url('/bg/orange.png')",
+                purple: "url('/bg/purple.png')"
             },
             fontFamily: {
                 title: "'Title'"
