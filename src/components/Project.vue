@@ -44,7 +44,7 @@ const components: Record<string, Component> = {
             {{ title }}
         </h1>
         <p
-            class="m-10 w-5/6 lg:w-2/3 text-center text-lg"
+            class="m-10 w-5/6 lg:w-2/3 text-center text-gray-600 text-lg"
             v-html="description"
         ></p>
         <div class="flex flex-col lg:flex-row gap-10 mb-10">

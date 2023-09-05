@@ -35,8 +35,6 @@ const modules = [Pagination];
 
 <template>
     <div class="w-full h-full overflow-hidden relative z-[4]">
-        <div class="w-1/2 h-full bg-blue absolute"></div>
-        <div class="w-1/2 h-full bg-green absolute right-0"></div>
         <swiper
             :slides-per-view="1"
             :pagination="{ clickable: true }"
@@ -54,9 +52,13 @@ const modules = [Pagination];
                     :id="item.id"
                 />
                 <img
+                    class="w-2/5 sm:w-1/2 mx-auto lg:w-1/5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                    src="/characters/face.png"
+                />
+                <img
                     :src="'/characters/' + item.character + '.png'"
                     alt="hero"
-                    class="w-2/5 sm:w-1/3 mx-auto lg:w-64 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
+                    class="w-2/5 sm:w-1/2 mx-auto lg:w-1/5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10"
                 />
             </swiper-slide>
         </swiper>

@@ -20,7 +20,7 @@ export const projects: Project[] = [
         id: 1,
         title: 'Veggy Hunt',
         description:
-            'Créer un service de livraison de repas en kit dont les produits proviendraient de fermes verticales ou de producteurs locaux en ciblant la génération Z qui sort tout juste du foyer familial et qui se cherche un mode de consommation personnel.',
+            'Créer un service de livraison de repas en kit dont les produits proviendraient de fermes verticales ou </br> de producteurs locaux en ciblant la génération Z qui sort tout juste du foyer familial et qui se cherche </br> un mode de consommation personnel.',
         component: 'VeggyHunt',
         image: 'veggy-hunt',
         themes: [
@@ -28,6 +28,15 @@ export const projects: Project[] = [
             'Application',
             'Campagne réseaux sociaux'
         ]
+    },
+    {
+        id: 5,
+        title: 'Fanzine',
+        description:
+            "Création d'un Fanzine sur le thème des troubles. </br> J'ai choisi le trouble de l'hyperphagie car on a tendance à ne pas le connaître.",
+        component: 'Fanzine',
+        image: 'fanzine',
+        themes: ['Linogravure', 'Réflexion graphique', 'Collage']
     },
     {
         id: 2,
@@ -38,24 +47,6 @@ export const projects: Project[] = [
         image: 'boomerang',
         themes: ['Site web', "Campagne d'affichage", 'Stickers']
     },
-
-    {
-        id: 3,
-        title: 'Logofolio',
-        description:
-            'Logos réalisés pour des entreprises, projets de cours ou travaux personnels crée sous <b>Illustrator</b>.',
-        component: 'Logofolio',
-        image: 'logofolio',
-        themes: ['Réflexion graphique']
-    },
-    // {
-    //     id: 3,
-    //     title: 'LéArtistes',
-    //     description:
-    //         'Création de personnages pour mon identité visuelle sur <b>Illustrator</b>.',
-    //     component: 'LeArtistes',
-    //     image: 'leartistes'
-    // },
     {
         id: 4,
         title: 'Humour & Minimalisme',
@@ -66,13 +57,13 @@ export const projects: Project[] = [
         themes: ['Montage photo', "Campagne d'affichage"]
     },
     {
-        id: 5,
-        title: 'Fanzine',
+        id: 7,
+        title: 'Chat motion',
         description:
-            "Création d'un Fanzine sur le thème des troubles. J'ai choisi le trouble de l'hyperphagie car on a tendance à ne pas le connaître.",
-        component: 'Fanzine',
-        image: 'fanzine',
-        themes: ['Réflexion graphique', 'Linogravure', 'Collage']
+            'Projet en motion design sous <b>Illustrator</b> et <b>After Effect</b>.</br>Création de notre illustration et petite animation.',
+        component: 'ChatMotion',
+        image: 'chatmotion',
+        themes: ['Motion Design', 'Illustration']
     },
     {
         id: 6,
@@ -82,7 +73,25 @@ export const projects: Project[] = [
         component: 'Enora',
         image: 'enora',
         themes: ['Direction artistique', 'Photographie', 'Retouche']
+    },
+    {
+        id: 3,
+        title: 'Logofolio',
+        description:
+            'Logos réalisés pour des entreprises, projets de cours ou travaux personnels crée sous <b>Illustrator</b>.',
+        component: 'Logofolio',
+        image: 'logofolio',
+        themes: ['Réflexion graphique']
     }
+    // {
+    //     id: 3,
+    //     title: 'LéArtistes',
+    //     description:
+    //         'Création de personnages pour mon identité visuelle sur <b>Illustrator</b>.',
+    //     component: 'LeArtistes',
+    //     image: 'leartistes'
+    // },
+
     // {
     //     id: 4,
     //     title: 'Polaroid',
@@ -100,14 +109,6 @@ export const projects: Project[] = [
     //     image: 'vivre-d-amour'
     // },
 
-    // {
-    //     id: 7,
-    //     title: 'Chat motion',
-    //     description:
-    //         'Projet en motion design sous <b>Illustrator</b> et <b>After Effect</b>.</br>Création de notre illustration et petite animation.',
-    //     component: 'ChatMotion',
-    //     image: 'chatmotion'
-    // },
     // {
     //     id: 8,
     //     title: 'CocaCola life',

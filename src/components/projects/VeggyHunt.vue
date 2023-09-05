@@ -20,13 +20,24 @@ const colors = ['#707950', '#a7af76', '#fbeba9', '#604008'];
         />
     </div>
     <h1 class="text-center text-3xl font-bold">VeggyHunt ?</h1>
-    <p class="text-center text-base lg:text-lg w-5/6 lg:w-2/3 mb-10">
-        Veggy Hunt redéfinit la façon de se procurer des repas. Inspiré par les
-        chasseurs-cueilleurs du passé, Veggy Hunt propose des kits de repas à
-        récupérer soi-même, ajoutant une touche d’aventure à l’alimentation
-        quotidienne. Encouragez la génération Z à redécouvrir le plaisir de se
-        déplacer pour se nourrir, comme nos ancêtres.
-    </p>
+    <div class="flex flex-col justify-center items-center w-full mb-14">
+        <p class="text-center text-base lg:text-lg w-5/6 lg:w-2/3 ">
+            Veggy Hunt redéfinit la façon de se procurer des repas. Inspiré par
+            les chasseurs-cueilleurs du passé,
+        </p>
+        <p class="text-center text-base lg:text-lg w-5/6 lg:w-2/3 ">
+            Veggy Hunt propose des kits de repas à récupérer soi-même, ajoutant
+            une touche d’aventure <p class="text-center text-base lg:text-lg w-5/6 lg:w-2/3 ">
+                à l’alimentation quotidienne. Encouragez la
+            génération Z à redécouvrir le plaisir de se déplacer 
+
+            </p> 
+        </p>
+        <p class="text-center text-base lg:text-lg w-5/6 lg:w-2/3 ">
+            pour se
+            nourrir, comme nos ancêtres.
+        </p>
+    </div>
     <div
         class="flex flex-col lg:flex-row justify-evenly items-center gap-20 mb-10"
     >
@@ -34,7 +45,7 @@ const colors = ['#707950', '#a7af76', '#fbeba9', '#604008'];
             v-for="i in 5"
             :key="i"
             :src="`/projects/veggy-hunt/phone-${i}.png`"
-            class="w-auto h-2/3 object-contain lg:block hidden"
+            class="w-auto h-11/12 object-contain lg:block hidden"
         />
         <img
             src="/projects/veggy-hunt/phone-3.png"

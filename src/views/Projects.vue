@@ -20,12 +20,17 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="flex flex-col gap-10 w-full justify-center items-center mb-10">
+    <div class="flex flex-col gap-10 w-full justify-center items-center mb-20">
         <h1 class="font-title text-6xl">Réalisations</h1>
-        <p class="text-gray-500 font-medium text-lg w-1/2 text-center">
-            Trouvez une sélection de projets réalisés tout au long de mon
-            parcours (design graphique, photographie, identité visuelle...)
-        </p>
+        <div class="w-full flex justify-center items-center flex-col">
+            <p class="text-gray-500 font-medium text-lg w-1/2 text-center">
+                Trouvez une sélection de projets réalisés tout au long de mon
+                parcours
+            </p>
+            <p class="text-gray-500 font-medium text-lg w-1/2 text-center">
+                (design graphique, photographie, identité visuelle...)
+            </p>
+        </div>
     </div>
 
     <div
@@ -45,7 +50,7 @@ onMounted(() => {
         >
             <img
                 :src="`/projects/${project.image}/logo.png`"
-                class="w-full h-full object-contain mx-auto"
+                class="w-full h-full object-contain mx-auto rounded-[28px] shadow-xl"
             />
         </RouterLink>
     </div>

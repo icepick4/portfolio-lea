@@ -8,9 +8,15 @@ const goBottom = () => {
 </script>
 
 <template>
+    <RouterLink
+        to="/"
+        class="m-4 text-[#707070] text-xl font-bold sm:hidden flex justify-center items-center"
+    >
+        <img src="/logo.png" alt="logo" class="w-20" />
+    </RouterLink>
     <div class="fixed w-full z-40">
         <div
-            class="flex flex-row justify-between items-center gap-4 bg-white z-50 w-full"
+            class="flex-row justify-between items-center gap-4 bg-white z-50 w-full sm:flex hidden"
         >
             <RouterLink to="/" class="m-4 text-[#707070] text-xl font-bold">
                 <img src="/logo.png" alt="logo" class="w-20" />

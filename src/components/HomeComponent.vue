@@ -30,11 +30,12 @@ const _ = ['bg-blue', 'bg-green', 'bg-purple'];
                 class="flex flex-col gap-5 md:gap-20 justify-center items-center"
             >
                 <div v-if="link">
-                    <RouterLink
-                        :to="link"
-                        class="text-lg lg:text-xl font-bold border-2 rounded-2xl border-black p-2 px-4 lg:px-8 mt-4 hover:bg-white hover:text-black transition-all duration-300"
-                    >
-                        {{ linkText }}
+                    <RouterLink :to="link">
+                        <div
+                            class="text-lg lg:text-xl font-bold border-2 rounded-2xl border-black p-2 px-4 lg:px-8 mt-4 hover:text-black hover:scale-110 transition-all duration-300"
+                        >
+                            {{ linkText }}
+                        </div>
                     </RouterLink>
                 </div>
             </div>
