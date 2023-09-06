@@ -58,6 +58,6 @@ const components: Record<string, Component> = {
                 </p>
             </div>
         </div>
-        <component :is="components[component]" />
     </div>
+    <component :is="components[component]" />
 </template>

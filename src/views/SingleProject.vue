@@ -19,7 +19,7 @@ onMounted(() => {
 
 <template>
     <div
-        class="flex flex-col items-center justify-center w-full text-black gap-10"
+        class="flex flex-col items-center justify-between w-full text-black gap-10"
     >
         <Project
             :title="projects[id - 1].title"
@@ -29,7 +29,7 @@ onMounted(() => {
         />
         <RouterLink
             to="/travaux"
-            class="text-xl font-bold border-2 rounded-2xl border-black p-2 px-4 mt-4 hover:scale-110 transition-all duration-300 mb-16"
+            class="text-xl font-bold border-2 rounded-2xl border-black p-2 px-4 mt-4 hover:scale-110 transition-all duration-300"
         >
             Retour aux réalisations
         </RouterLink>

@@ -30,7 +30,7 @@ export const projects: Project[] = [
         ]
     },
     {
-        id: 5,
+        id: 2,
         title: 'Fanzine',
         description:
             "Création d'un Fanzine sur le thème des troubles. </br> J'ai choisi le trouble de l'hyperphagie car on a tendance à ne pas le connaître.",
@@ -39,7 +39,7 @@ export const projects: Project[] = [
         themes: ['Linogravure', 'Réflexion graphique', 'Collage']
     },
     {
-        id: 2,
+        id: 3,
         title: 'Boomerang',
         description:
             'Par groupes de 2, imaginez l’identité de la salle de spectacle « boomerang », une salle de concerts contemporains qui accueille des artistes émergents.',
@@ -57,7 +57,7 @@ export const projects: Project[] = [
         themes: ['Montage photo', "Campagne d'affichage"]
     },
     {
-        id: 7,
+        id: 5,
         title: 'Chat motion',
         description:
             'Projet en motion design sous <b>Illustrator</b> et <b>After Effect</b>.</br>Création de notre illustration et petite animation.',
@@ -75,7 +75,7 @@ export const projects: Project[] = [
         themes: ['Direction artistique', 'Photographie', 'Retouche']
     },
     {
-        id: 3,
+        id: 7,
         title: 'Logofolio',
         description:
             'Logos réalisés pour des entreprises, projets de cours ou travaux personnels crée sous <b>Illustrator</b>.',

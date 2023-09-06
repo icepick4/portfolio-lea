@@ -19,7 +19,7 @@ watch(
         <Header />
         <div
             class="flex justify-center items-center flex-grow flex-col"
-            :class="isHome ? 'pt-0' : 'pt-28'"
+            :class="isHome ? 'pt-0' : 'pt-24'"
         >
             <RouterView />
         </div>

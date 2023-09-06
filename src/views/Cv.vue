@@ -38,7 +38,7 @@ export default defineComponent({
         </div>
         <RouterLink
             to="/"
-            class="text-xl font-bold border-2 rounded-2xl border-black p-2 px-4 mt-4 hover:scale-110 transition-all duration-300 mb-16"
+            class="text-xl font-bold border-2 rounded-2xl border-black p-2 px-4 mt-4 hover:scale-110 transition-all duration-300"
         >
             Retour à la l'accueil
         </RouterLink>
