@@ -22,7 +22,7 @@ export default defineComponent({
             Curriculum Vitae
         </h1>
         <a
-            class="text-xl font-bold border-4 rounded-lg border-black p-2 mt-4 hover:bg-black hover:text-white transition-all duration-300 mb-16"
+            class="text-xl font-bold border-2 rounded-lg border-black cursor-pointer p-2 mt-4 hover:scale-110 transition-all duration-300 mb-16"
         >
             Télécharger le PDF
         </a>
@@ -38,7 +38,7 @@ export default defineComponent({
         </div>
         <RouterLink
             to="/"
-            class="text-xl font-bold border-4 rounded-2xl border-black p-2 px-4 mt-4 hover:bg-black hover:text-white transition-all duration-300 mb-16"
+            class="text-xl font-bold border-2 rounded-2xl border-black p-2 px-4 mt-4 hover:scale-110 transition-all duration-300 mb-16"
         >
             Retour à la l'accueil
         </RouterLink>

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue';
 import { RouterView, useRoute } from 'vue-router';
+import Footer from './components/Footer.vue';
 import Header from './components/Header.vue';
 
 const route = useRoute();
@@ -22,6 +23,6 @@ watch(
         >
             <RouterView />
         </div>
-        <!-- <Footer /> -->
+        <Footer v-if="!isHome" />
     </div>
 </template>
