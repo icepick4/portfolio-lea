@@ -38,7 +38,7 @@
                         href="https://github.com/icepick4"
                         class="hover:scale-110 transition-all duration-300"
                     >
-                        <img src="github.png" alt="github" class="w-8" />
+                        <img src="/github.png" alt="github" class="w-8" />
                     </a>
                 </div>
             </div>
