@@ -1,10 +1,10 @@
 <script setup lang="ts">
+import HomeComponent from '@/components/HomeComponent.vue';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import HomeComponent from '../components/HomeComponent.vue';
 const items = [
     {
         color: 'blue',
@@ -34,15 +34,19 @@ const modules = [Pagination];
 </script>
 
 <template>
-    <div class="w-full h-full overflow-hidden relative z-[4]">
+    <div class="w-full h-full overflow-hidden">
         <swiper
             :slides-per-view="1"
             :pagination="{ clickable: true }"
             :grabCursor="true"
             :modules="modules"
-            class="w-full h-full flex items-center justify-center z-10"
+            class="w-full h-full flex items-center justify-center"
         >
             <swiper-slide v-for="item in items" :key="item.id">
+                <img
+                    src="/characters/face.png"
+                    class="w-1/5 z-[1] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                />
                 <HomeComponent
                     :color="item.color"
                     :character="item.character"
@@ -52,15 +56,26 @@ const modules = [Pagination];
                     :id="item.id"
                 />
                 <img
-                    class="w-2/5 sm:w-1/2 mx-auto lg:w-1/5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                    src="/characters/face.png"
-                />
-                <img
                     :src="'/characters/' + item.character + '.png'"
                     alt="hero"
-                    class="w-2/5 sm:w-1/2 mx-auto lg:w-1/5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10"
+                    class="w-2/5 sm:w-1/2 mx-auto lg:w-1/5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2]"
                 />
             </swiper-slide>
         </swiper>
     </div>
 </template>
+<style scoped>
+/* #face {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    z-index: 3;
+    pointer-events: none;
+} */
+
+.test {
+    left: 100%;
+}
+</style>

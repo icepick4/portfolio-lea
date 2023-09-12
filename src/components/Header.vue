@@ -1,9 +1,18 @@
 <script setup lang="ts">
+import { useRoute, useRouter } from 'vue-router';
+
+const route = useRoute();
+const router = useRouter();
+
 const goBottom = () => {
-    document.body.scrollTo({
-        top: document.body.scrollHeight,
-        behavior: 'smooth'
-    });
+    if (route.path === '/') {
+        router.push('/mentions-legales');
+    } else {
+        document.body.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth'
+        });
+    }
 };
 </script>
 

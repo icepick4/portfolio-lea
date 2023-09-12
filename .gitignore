@@ -26,5 +26,4 @@ coverage
 *.sln
 *.sw?
 
-
-wetransfer_book_2023-07-26_1455/*
+dist

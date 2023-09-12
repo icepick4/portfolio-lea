@@ -24,6 +24,14 @@ const isClickable = computed(() => {
         return false;
     }
 });
+
+const evenNumber = computed(() => {
+    if (props.list) {
+        return props.list.length % 2 == 0;
+    } else {
+        return false;
+    }
+});
 </script>
 
 <template>
@@ -49,16 +57,25 @@ const isClickable = computed(() => {
                 >
                     {{ title }}
                 </h2>
-                <ul v-if="list" class="flex flex-col gap-2 w-4/6 h-auto mt-16">
-                    <div v-for="i in list.length" :key="i">
+                <ul v-if="list" class="flex flex-col gap-3 w-5/6 h-auto mt-16">
+                    <div v-for="i in Math.ceil(list.length / 2)" :key="i">
                         <li
                             :class="
-                                i % 2 != 0
+                                (i * 2 - 2) % 2 === 0
                                     ? 'font-bold text-lg'
                                     : 'font-normal text-base'
                             "
-                            class="text-center"
-                            v-html="list[i - 1]"
+                            class="text-center m-0"
+                            v-html="list[i * 2 - 2]"
+                        ></li>
+                        <li
+                            :class="
+                                (i * 2 - 1) % 2 === 0
+                                    ? 'font-bold text-lg'
+                                    : 'font-normal text-base'
+                            "
+                            class="text-center m-0"
+                            v-html="list[i * 2 - 1]"
                         ></li>
                     </div>
                 </ul>

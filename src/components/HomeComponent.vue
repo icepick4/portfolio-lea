@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const props = defineProps<{
+defineProps<{
     color: string;
     character: string;
     title: string;
@@ -12,11 +12,11 @@ const _ = ['bg-blue', 'bg-green', 'bg-purple'];
 
 <template>
     <div
-        class="w-screen h-screen flex items-center justify-center select-none"
+        class="w-screen h-screen flex items-center justify-center select-none z-[-2]"
         :class="`bg-${color}`"
     >
         <div
-            class="flex flex-col items-center justify-end w-full h-2/3 sm:h-2/3 text-black gap-10"
+            class="flex flex-col items-center justify-end w-full h-2/3 sm:h-3/4 text-black gap-5"
         >
             <div
                 class="flex flex-col gap-5 md:gap-20 justify-center items-center"
@@ -32,7 +32,7 @@ const _ = ['bg-blue', 'bg-green', 'bg-purple'];
                 <div v-if="link">
                     <RouterLink :to="link">
                         <div
-                            class="text-lg lg:text-xl font-bold border-2 rounded-2xl border-black p-2 px-4 lg:px-8 mt-4 hover:text-black hover:scale-110 transition-all duration-300"
+                            class="text-lg lg:text-xl font-bold border-2 rounded-2xl border-black p-2 px-4 lg:px-8 hover:text-black hover:scale-110 transition-all duration-300"
                         >
                             {{ linkText }}
                         </div>
