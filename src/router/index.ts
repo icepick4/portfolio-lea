@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Cv from '../views/Cv.vue';
 import Home from '../views/Home.vue';
+import LegalNotices from '../views/LegalNotices.vue';
 import Projects from '../views/Projects.vue';
 import SingleProject from '../views/SingleProject.vue';
 const router = createRouter({
@@ -25,6 +26,11 @@ const router = createRouter({
             path: '/cv',
             name: 'Cv',
             component: Cv
+        },
+        {
+            path: '/mentions-legales',
+            name: 'MentionsLegales',
+            component: LegalNotices
         }
     ]
 });

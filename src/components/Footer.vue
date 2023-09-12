@@ -26,7 +26,9 @@
                 >
             </div>
             <div class="flex flex-col w-1/3 items-start">
-                <p>Mentions Légales</p>
+                <RouterLink to="/mentions-legales" class="underline"
+                    >Mentions Légales</RouterLink
+                >
                 <div class="flex gap-4 justify-center items-center">
                     <p>
                         Réalisé par

@@ -28,7 +28,7 @@ const colors = ['#707950', '#a7af76', '#fbeba9', '#604008'];
         <p class="text-center text-base lg:text-lg w-5/6 lg:w-2/3 ">
             Veggy Hunt propose des kits de repas à récupérer soi-même, ajoutant
             une touche d’aventure <p class="text-center text-base lg:text-lg w-5/6 lg:w-2/3 ">
-                à l’alimentation quotidienne. Encouragez la
+                à l’alimentation quotidienne. Encourager la
             génération Z à redécouvrir le plaisir de se déplacer 
 
             </p> 
