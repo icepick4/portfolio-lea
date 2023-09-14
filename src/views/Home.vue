@@ -91,3 +91,9 @@ const _ = ['bg-blue', 'bg-green', 'bg-purple'];
         </swiper>
     </div>
 </template>
+
+<style>
+.swiper-pagination {
+    margin-bottom: 15px;
+}
+</style>

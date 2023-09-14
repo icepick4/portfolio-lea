@@ -1,4 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { onBeforeMount } from 'vue';
+
+onBeforeMount(() => {
+    document.body.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth'
+    });
+});
+</script>
 
 <template>
     <h1 class="font-title text-5xl mb-10 text-center">Mentions légales</h1>
