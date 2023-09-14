@@ -24,14 +24,6 @@ const isClickable = computed(() => {
         return false;
     }
 });
-
-const evenNumber = computed(() => {
-    if (props.list) {
-        return props.list.length % 2 == 0;
-    } else {
-        return false;
-    }
-});
 </script>
 
 <template>
@@ -89,7 +81,7 @@ const evenNumber = computed(() => {
                     <img
                         v-for="i in 6"
                         :key="i"
-                        :src="`/cv/logos/${i}.png`"
+                        :src="`/portfolio-lea/cv/logos/${i}.png`"
                         class="w-auto h-24 lg:h-32 object-cover"
                     />
                 </div>
@@ -101,7 +93,7 @@ const evenNumber = computed(() => {
                     {{ title }}
                 </h2>
                 <img
-                    :src="`/characters/${character}.png`"
+                    :src="`/portfolio-lea/characters/${character}.png`"
                     class="w-4/6 h-auto"
                 />
             </div>
