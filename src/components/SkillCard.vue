@@ -57,13 +57,16 @@ const evenNumber = computed(() => {
                 >
                     {{ title }}
                 </h2>
-                <ul v-if="list" class="flex flex-col gap-3 w-5/6 h-auto mt-16">
+                <ul
+                    v-if="list"
+                    class="flex flex-col gap-3 w-full sm:w-5/6 h-auto mt-16"
+                >
                     <div v-for="i in Math.ceil(list.length / 2)" :key="i">
                         <li
                             :class="
                                 (i * 2 - 2) % 2 === 0
-                                    ? 'font-bold text-lg'
-                                    : 'font-normal text-base'
+                                    ? 'font-bold text-base sm:text-lg'
+                                    : 'font-normal text-sm sm:text-base'
                             "
                             class="text-center m-0"
                             v-html="list[i * 2 - 2]"

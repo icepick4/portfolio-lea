@@ -11,17 +11,15 @@ const _ = ['bg-blue', 'bg-green', 'bg-purple'];
 </script>
 
 <template>
-    <div
-        class="w-screen h-screen flex items-center justify-center select-none z-[-2]"
-    >
+    <div class="w-screen h-screen flex items-center justify-center select-none">
         <div
-            class="flex flex-col items-center justify-end w-full h-2/3 sm:h-3/4 text-black gap-5"
+            class="flex flex-col items-center justify-end w-full h-3/4 text-black gap-5"
         >
             <div
                 class="flex flex-col gap-5 md:gap-20 justify-center items-center"
             >
                 <h1
-                    class="text-2xl lg:text-5xl font-bold text-center lg:leading-snug"
+                    class="text-xl lg:text-5xl font-bold text-center lg:leading-snug"
                     v-html="title"
                 ></h1>
             </div>

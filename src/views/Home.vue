@@ -60,6 +60,14 @@ const _ = ['bg-blue', 'bg-green', 'bg-purple'];
             >
                 <swiper-slide v-for="item in items" :key="item.id">
                     <div class="w-full h-full">
+                        <HomeComponent
+                            :color="item.color"
+                            :character="item.character"
+                            :title="item.title"
+                            :link="item.link"
+                            :linkText="item.linkText"
+                            :id="item.id"
+                        />
                         <img
                             :src="
                                 '/portfolio-lea/characters/' +
@@ -67,7 +75,7 @@ const _ = ['bg-blue', 'bg-green', 'bg-purple'];
                                 '.png'
                             "
                             alt="hero"
-                            class="w-2/5 sm:w-1/2 mx-auto lg:w-1/5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2]"
+                            class="w-2/3 sm:w-1/2 lg:w-1/5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2]"
                         />
                     </div>
                 </swiper-slide>
@@ -80,18 +88,10 @@ const _ = ['bg-blue', 'bg-green', 'bg-purple'];
         >
             <img
                 src="/characters/face.png"
-                class="w-1/5 z-[1] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                class="w-2/3 sm:w-1/2 lg:w-1/5 z-[1] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
             />
             <swiper-slide v-for="item in items" :key="item.id">
-                <HomeComponent
-                    :color="item.color"
-                    :character="item.character"
-                    :title="item.title"
-                    :link="item.link"
-                    :linkText="item.linkText"
-                    :id="item.id"
-                    :class="`bg-${item.color}`"
-                />
+                <div class="w-full h-full" :class="`bg-${item.color}`"></div>
             </swiper-slide>
         </swiper>
     </div>

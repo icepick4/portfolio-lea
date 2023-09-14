@@ -18,7 +18,7 @@ export default defineComponent({
 
 <template>
     <div class="flex flex-col items-center gap-14 h-full mb-20">
-        <h1 class="text-5xl lg:text-7xl font-title text-center">
+        <h1 class="text-3xl sm:text-7xl font-title text-center">
             Curriculum Vitae
         </h1>
         <a

@@ -6,12 +6,12 @@
     >
         <h1 class="text-center text-5xl font-title my-8">Contacts</h1>
         <div
-            class="w-full flex flex-col sm:flex-row justify-center items-start"
+            class="w-full flex flex-col sm:flex-row justify-center items-start sm:gap-0 gap-5"
         >
-            <p class="font-bold w-1/3 text-right">
+            <p class="font-bold w-full sm:w-1/3 text-center sm:text-right">
                 LEVI Léa 2023 - Tous droits réservés
             </p>
-            <div class="flex flex-col items-center w-1/3">
+            <div class="flex flex-col items-center w-full sm:w-1/3">
                 <p class="font-bold">Leamarina.levi@gmail.com</p>
                 <p class="font-bold">06 48 90 68 34</p>
                 <a
@@ -25,7 +25,9 @@
                     >LinkedIn</a
                 >
             </div>
-            <div class="flex flex-col w-1/3 items-start">
+            <div
+                class="flex flex-col w-full sm:w-1/3 items-center sm:items-start"
+            >
                 <RouterLink to="/mentions-legales" class="underline"
                     >Mentions Légales</RouterLink
                 >

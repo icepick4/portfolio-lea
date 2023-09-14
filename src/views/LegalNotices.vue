@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-    <h1 class="font-title text-5xl mb-10">Mentions légales</h1>
+    <h1 class="font-title text-5xl mb-10 text-center">Mentions légales</h1>
 
     <div
         class="flex flex-col justify-center items-center gap-6 text-center w-5/6 md:w-1/2"
@@ -22,8 +22,12 @@
         <div>
             <p class="text-gray-600">Hébergement</p>
             <p>
-                Le Site est hébergé par Rémi JARA (contact téléphonique
-                +33771675362)
+                Le Site est hébergé par
+                <a
+                    href="https://youtu.be/dQw4w9WgXcQ?si=8uxeLiOQVb3toGwB"
+                    class="hover:cursor-text"
+                    >R</a
+                >émi JARA (contact téléphonique +33771675362)
             </p>
         </div>
         <div>

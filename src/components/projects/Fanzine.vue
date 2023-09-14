@@ -6,19 +6,45 @@ export default defineComponent({
 });
 </script>
 <template>
-    <img
-        src="/projects/fanzine/main.jpeg"
-        class="h-96 xl:h-1/2 object-cover w-full px-32 mb-5"
-    />
-    <div
-        class="w-full px-32 flex flex-col xl:flex-row justify-between items-center gap-5 xl:gap-1"
-    >
+    <div class="flex flex-col gap-4">
         <img
-            v-for="i in 7"
-            :key="i"
-            :src="`/portfolio-lea/projects/fanzine/${i}.png`"
-            class="h-auto xl:h-32 2xl:h-40 w-1/2 xl:w-auto object-cover"
+            src="/projects/fanzine/main.jpeg"
+            class="object-cover w-full px-10 2xl:px-28 h-[35rem]"
         />
-        <!--3-1-3-->
+        <div
+            class="hidden xl:flex w-full px-10 2xl:px-28 flex-col md:flex-row justify-between items-center gap-5"
+        >
+            <img
+                v-for="i in 7"
+                :key="i"
+                :src="`/portfolio-lea/projects/fanzine/${i}.png`"
+                class="h-32 object-cover"
+            />
+        </div>
+        <div
+            class="flex xl:hidden w-full px-10 2xl:px-28 flex-col justify-between items-center gap-5"
+        >
+            <div
+                class="flex flex-col sm:flex-row sm:w-full justify-center gap-5"
+            >
+                <img
+                    v-for="i in 3"
+                    :key="i"
+                    :src="`/portfolio-lea/projects/fanzine/${i}.png`"
+                    class="h-32 object-cover"
+                />
+            </div>
+            <img src="/projects/fanzine/4.png" class="h-32 object-cover" />
+            <div
+                class="flex flex-col sm:flex-row sm:w-full justify-center gap-5"
+            >
+                <img
+                    v-for="i in 3"
+                    :key="i"
+                    :src="`/portfolio-lea/projects/fanzine/${i + 4}.png`"
+                    class="h-32 object-cover"
+                />
+            </div>
+        </div>
     </div>
 </template>

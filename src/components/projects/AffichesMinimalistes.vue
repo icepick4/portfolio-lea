@@ -26,7 +26,7 @@ export default defineComponent({
             class="w-5/6 h-auto object-cover"
         />
     </div>
-    <h1 class="text-xl">Mise en situation des affiches</h1>
+    <h1 class="text-xl text-center">Mise en situation des affiches</h1>
     <div
         class="grid grid-cols-2 grid-rows-1 gap-5 w-3/5 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6"
     >
