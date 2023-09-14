@@ -61,7 +61,11 @@ const _ = ['bg-blue', 'bg-green', 'bg-purple'];
                 <swiper-slide v-for="item in items" :key="item.id">
                     <div class="w-full h-full">
                         <img
-                            :src="'/characters/' + item.character + '.png'"
+                            :src="
+                                '/portfolio-lea/characters/' +
+                                item.character +
+                                '.png'
+                            "
                             alt="hero"
                             class="w-2/5 sm:w-1/2 mx-auto lg:w-1/5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2]"
                         />

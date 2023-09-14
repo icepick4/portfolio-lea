@@ -7,7 +7,7 @@ export default defineComponent({
 </script>
 <template>
     <img
-        :src="'/projects/fanzine/main.jpeg'"
+        src="/projects/fanzine/main.jpeg"
         class="h-96 xl:h-1/2 object-cover w-full px-32 mb-5"
     />
     <div
@@ -16,7 +16,7 @@ export default defineComponent({
         <img
             v-for="i in 7"
             :key="i"
-            :src="`/projects/fanzine/${i}.png`"
+            :src="`/portfolio-lea/projects/fanzine/${i}.png`"
             class="h-auto xl:h-32 2xl:h-40 w-1/2 xl:w-auto object-cover"
         />
         <!--3-1-3-->

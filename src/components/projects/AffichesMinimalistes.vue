@@ -11,7 +11,7 @@ export default defineComponent({
         <img
             v-for="i in 6"
             :key="i"
-            :src="`/projects/affiches-minimalistes/${i}.jpg`"
+            :src="`/portfolio-lea/projects/affiches-minimalistes/${i}.jpg`"
             class="h-full w-full object-center object-cover"
             :class="i != 2 && i != 5 ? 'col-span-2' : 'col-span-1'"
         />
@@ -22,7 +22,7 @@ export default defineComponent({
         <img
             v-for="i in 6"
             :key="i"
-            :src="`/projects/affiches-minimalistes/${i}.jpg`"
+            :src="`/portfolio-lea/projects/affiches-minimalistes/${i}.jpg`"
             class="w-5/6 h-auto object-cover"
         />
     </div>
@@ -33,7 +33,7 @@ export default defineComponent({
         <img
             v-for="i in 6"
             :key="i"
-            :src="`/projects/affiches-minimalistes/ideas/${i}.jpg`"
+            :src="`/portfolio-lea/projects/affiches-minimalistes/ideas/${i}.jpg`"
             class="w-auto h-full object-cover"
         />
     </div>

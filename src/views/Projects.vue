@@ -21,20 +21,24 @@ onMounted(() => {
 
 <template>
     <div class="flex flex-col gap-10 w-full justify-center items-center mb-20">
-        <h1 class="font-title text-6xl">Réalisations</h1>
+        <h1 class="font-title text-3xl sm:text-6xl">Réalisations</h1>
         <div class="w-full flex justify-center items-center flex-col">
-            <p class="text-gray-500 font-medium text-lg w-1/2 text-center">
+            <p
+                class="text-gray-500 font-medium text-lg w-5/6 sm:w-1/2 text-center"
+            >
                 Trouvez une sélection de projets réalisés tout au long de mon
                 parcours
             </p>
-            <p class="text-gray-500 font-medium text-lg w-1/2 text-center">
+            <p
+                class="text-gray-500 font-medium text-lg w-5/6 sm:w-1/2 text-center"
+            >
                 (design graphique, photographie, identité visuelle...)
             </p>
         </div>
     </div>
 
     <div
-        class="grid grid-cols-2 md:grid-cols-3 w-5/6 h-full content-center gap-10 mb-10"
+        class="grid grid-cols-2 md:grid-cols-3 w-5/6 h-full content-center gap-10 mb-10 2xl:p-20"
     >
         <RouterLink
             v-for="project in projects"
@@ -49,7 +53,7 @@ onMounted(() => {
             :class="randomizeColor(project.id)"
         >
             <img
-                :src="`/projects/${project.image}/logo.png`"
+                :src="`/portfolio-lea/projects/${project.image}/logo.png`"
                 class="w-full h-full object-contain mx-auto rounded-[28px] shadow-xl"
             />
         </RouterLink>

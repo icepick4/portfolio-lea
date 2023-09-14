@@ -13,7 +13,7 @@ export default defineComponent({
         <img
             v-for="i in 6"
             :key="i"
-            :src="`/projects/logofolio/${i}.jpg`"
+            :src="`/portfolio-lea/projects/logofolio/${i}.jpg`"
             class="w-auto h-auto object-cover"
         />
     </div>

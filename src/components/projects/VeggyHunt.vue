@@ -15,7 +15,7 @@ const colors = ['#707950', '#a7af76', '#fbeba9', '#604008'];
         <img
             v-for="i in 3"
             :key="i"
-            :src="`/projects/veggy-hunt/poster-${i}.png`"
+            :src="`/portfolio-lea/projects/veggy-hunt/poster-${i}.png`"
             class="w-3/4 md:w-1/3 h-3/4 object-contain"
         />
     </div>
@@ -44,7 +44,7 @@ const colors = ['#707950', '#a7af76', '#fbeba9', '#604008'];
         <img
             v-for="i in 5"
             :key="i"
-            :src="`/projects/veggy-hunt/phone-${i}.png`"
+            :src="`/portfolio-lea/projects/veggy-hunt/phone-${i}.png`"
             class="w-auto h-11/12 object-contain lg:block hidden"
         />
         <img

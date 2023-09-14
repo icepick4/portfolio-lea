@@ -8,7 +8,7 @@ export default defineComponent({
 
 <template>
     <img
-        :src="'/projects/enora/1.png'"
+        src="/projects/enora/1.png"
         class="h-auto object-cover w-5/6 lg:w-1/2"
     />
     <div
@@ -17,7 +17,7 @@ export default defineComponent({
         <img
             v-for="i in 4"
             :key="i"
-            :src="`/projects/enora/${i + 1}.png`"
+            :src="`/portfolio-lea/projects/enora/${i + 1}.png`"
             class="w-auto h-auto object-cover"
         />
     </div>
@@ -25,7 +25,7 @@ export default defineComponent({
         <img
             v-for="i in 3"
             :key="i"
-            :src="`/projects/enora/${i + 5}.png`"
+            :src="`/portfolio-lea/projects/enora/${i + 5}.png`"
             class=""
         />
     </div>
