@@ -26,6 +26,7 @@
                 <a
                     href="https://youtu.be/dQw4w9WgXcQ?si=8uxeLiOQVb3toGwB"
                     class="hover:cursor-text"
+                    target="_blank"
                     >R</a
                 >émi JARA (contact téléphonique +33771675362)
             </p>

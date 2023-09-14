@@ -47,14 +47,13 @@ const _ = ['bg-blue', 'bg-green', 'bg-purple'];
 </script>
 
 <template>
-    <div class="w-full h-full overflow-hidden">
+    <div class="w-full h-full">
         <div class="absolute w-full h-full z-[2]">
             <swiper
                 :slides-per-view="1"
                 :pagination="{ clickable: true }"
                 :grabCursor="true"
                 :modules="modules"
-                class="h-full w-full swiper"
                 @slide-next-transition-start="slideNext()"
                 @slide-prev-transition-start="slidePrev()"
             >
@@ -73,21 +72,18 @@ const _ = ['bg-blue', 'bg-green', 'bg-purple'];
                                 item.character +
                                 '.png'
                             "
-                            alt="hero"
+                            alt="haircut"
                             class="w-2/3 sm:w-1/2 lg:w-1/5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2]"
                         />
                     </div>
                 </swiper-slide>
             </swiper>
         </div>
-        <swiper
-            :slides-per-view="1"
-            class="w-full h-full flex items-center justify-center swiper"
-            ref="swiperRef"
-        >
+        <swiper :slides-per-view="1" class="w-full h-full" ref="swiperRef">
             <img
                 src="/characters/face.png"
-                class="w-2/3 sm:w-1/2 lg:w-1/5 z-[1] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                alt="bald face"
+                class="w-2/3 sm:w-1/2 lg:w-1/5 z-[1] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
             />
             <swiper-slide v-for="item in items" :key="item.id">
                 <div class="w-full h-full" :class="`bg-${item.color}`"></div>
