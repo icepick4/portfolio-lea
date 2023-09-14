@@ -13,7 +13,6 @@ const _ = ['bg-blue', 'bg-green', 'bg-purple'];
 <template>
     <div
         class="w-screen h-screen flex items-center justify-center select-none z-[-2]"
-        :class="`bg-${color}`"
     >
         <div
             class="flex flex-col items-center justify-end w-full h-2/3 sm:h-3/4 text-black gap-5"
