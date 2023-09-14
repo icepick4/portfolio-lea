@@ -1,19 +1,16 @@
 <script setup lang="ts">
 defineProps<{
-    color: string;
     character: string;
     title: string;
     link?: string;
     linkText?: string;
 }>();
-
-const _ = ['bg-blue', 'bg-green', 'bg-purple'];
 </script>
 
 <template>
     <div class="w-screen h-screen flex items-center justify-center select-none">
         <div
-            class="flex flex-col items-center justify-end w-full h-3/4 text-black gap-5"
+            class="flex flex-col items-center justify-end w-full h-2/3 text-black gap-1 sm:gap-5"
         >
             <div
                 class="flex flex-col gap-5 md:gap-20 justify-center items-center"
@@ -39,16 +36,3 @@ const _ = ['bg-blue', 'bg-green', 'bg-purple'];
         </div>
     </div>
 </template>
-
-<style scoped>
-.red {
-    background-color: #ff8e99;
-}
-.blue {
-    background-color: #7fcdc5;
-}
-
-.green {
-    background-color: #94dcaa;
-}
-</style>

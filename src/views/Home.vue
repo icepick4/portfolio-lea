@@ -61,7 +61,6 @@ const _ = ['bg-blue', 'bg-green', 'bg-purple'];
                 <swiper-slide v-for="item in items" :key="item.id">
                     <div class="w-full h-full">
                         <HomeComponent
-                            :color="item.color"
                             :character="item.character"
                             :title="item.title"
                             :link="item.link"

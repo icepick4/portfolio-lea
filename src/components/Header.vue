@@ -1,11 +1,18 @@
 <script setup lang="ts">
+import { computed } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
 const route = useRoute();
 const router = useRouter();
 
+const isHome = computed(() => route.path === '/');
+
+const isVisible = computed(() => {
+    return !isHome.value;
+});
+
 const goBottom = () => {
-    if (route.path === '/') {
+    if (isHome.value) {
         router.push('/mentions-legales');
     } else {
         document.body.scrollTo({
@@ -17,7 +24,7 @@ const goBottom = () => {
 </script>
 
 <template>
-    <div class="fixed w-full z-40">
+    <div v-if="isVisible" class="fixed w-full z-40">
         <div
             class="flex-row justify-center sm:justify-between items-center gap-4 bg-white z-50 w-full flex"
         >
