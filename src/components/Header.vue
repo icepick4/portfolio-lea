@@ -7,10 +7,6 @@ const router = useRouter();
 
 const isHome = computed(() => route.path === '/');
 
-const isVisible = computed(() => {
-    return !isHome.value;
-});
-
 const goBottom = () => {
     if (isHome.value) {
         router.push('/mentions-legales');
@@ -24,7 +20,7 @@ const goBottom = () => {
 </script>
 
 <template>
-    <div v-if="isVisible" class="fixed w-full z-40">
+    <div class="fixed w-full z-40">
         <div
             class="flex-row justify-center sm:justify-between items-center gap-4 bg-white z-50 w-full flex"
         >
