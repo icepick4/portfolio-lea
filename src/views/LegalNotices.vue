@@ -1,11 +1,20 @@
 <script setup lang="ts">
-import { onBeforeMount } from 'vue';
+import { onBeforeMount, onMounted } from 'vue';
 
 onBeforeMount(() => {
     document.body.scrollTo({
         top: document.body.scrollHeight,
         behavior: 'smooth'
     });
+});
+
+onMounted(() => {
+    let easterEgg = document.querySelector('#easter-egg');
+    if (easterEgg != null) {
+        easterEgg.addEventListener('click', () => {
+            window.open('https://youtu.be/dQw4w9WgXcQ?si=8uxeLiOQVb3toGwB');
+        });
+    }
 });
 </script>
 
@@ -32,12 +41,8 @@ onBeforeMount(() => {
             <p class="text-gray-600">Hébergement</p>
             <p>
                 Le Site est hébergé par
-                <a
-                    href="https://youtu.be/dQw4w9WgXcQ?si=8uxeLiOQVb3toGwB"
-                    class="hover:cursor-text"
-                    target="_blank"
-                    >R</a
-                >émi JARA (contact téléphonique +33771675362)
+                <a class="hover:cursor-text" id="easter-egg">R</a>émi JARA
+                (contact téléphonique +33771675362)
             </p>
         </div>
         <div>
