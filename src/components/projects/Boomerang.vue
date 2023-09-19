@@ -18,7 +18,7 @@ export default defineComponent({
         <img
             v-for="n in 3"
             :key="n"
-            :src="`/portfolio-lea/projects/boomerang/${n}.png`"
+            :src="`/projects/boomerang/${n}.png`"
             class="w-3/4 md:w-1/3 h-3/4 object-contain"
         />
     </div>

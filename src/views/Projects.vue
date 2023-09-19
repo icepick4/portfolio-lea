@@ -53,7 +53,7 @@ onMounted(() => {
             :class="randomizeColor(project.id)"
         >
             <img
-                :src="`/portfolio-lea/projects/${project.image}/logo.png`"
+                :src="`/projects/${project.image}/logo.png`"
                 class="w-full h-full object-contain mx-auto rounded-[28px] shadow-xl"
             />
         </RouterLink>

@@ -17,7 +17,7 @@ export default defineComponent({
             <img
                 v-for="i in 7"
                 :key="i"
-                :src="`/portfolio-lea/projects/fanzine/${i}.png`"
+                :src="`/projects/fanzine/${i}.png`"
                 class="h-32 object-cover"
             />
         </div>
@@ -30,7 +30,7 @@ export default defineComponent({
                 <img
                     v-for="i in 3"
                     :key="i"
-                    :src="`/portfolio-lea/projects/fanzine/${i}.png`"
+                    :src="`/projects/fanzine/${i}.png`"
                     class="h-32 object-cover"
                 />
             </div>
@@ -41,7 +41,7 @@ export default defineComponent({
                 <img
                     v-for="i in 3"
                     :key="i"
-                    :src="`/portfolio-lea/projects/fanzine/${i + 4}.png`"
+                    :src="`/projects/fanzine/${i + 4}.png`"
                     class="h-32 object-cover"
                 />
             </div>

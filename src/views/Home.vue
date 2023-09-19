@@ -67,11 +67,7 @@ const _ = ['bg-blue', 'bg-green', 'bg-purple'];
                             :id="item.id"
                         />
                         <img
-                            :src="
-                                '/portfolio-lea/characters/' +
-                                item.character +
-                                '.png'
-                            "
+                            :src="'/characters/' + item.character + '.png'"
                             alt="haircut"
                             class="w-2/3 sm:w-1/2 lg:w-1/5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2]"
                         />
