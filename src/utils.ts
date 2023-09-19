@@ -126,7 +126,7 @@ export const skills: Skill[] = [
         list: [
             'Bachelor Design Graphique',
             `Brassart Annecy
-            <b>2021/2024</b>
+            <b>2021/2024</b></br>
             Design graphique, Design de packaging, Webdesign, Publicité, Direction artistique.
             Prendre en charge un projet dans sa globalité.
             `,
