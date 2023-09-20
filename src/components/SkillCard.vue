@@ -129,10 +129,14 @@ const isClickable = computed(() => {
 
 .card .front {
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotateX(0deg);
 }
 
 .card .back {
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotateX(0deg);
     transform: rotateY(180deg);
 }
 </style>
