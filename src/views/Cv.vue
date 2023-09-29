@@ -23,6 +23,8 @@ export default defineComponent({
         </h1>
         <a
             class="text-xl font-bold border-2 rounded-lg border-black cursor-pointer p-2 mt-4 hover:scale-110 transition-all duration-300 mb-16"
+            href="/cv/CV-2024-lea-levi.pdf"
+            download
         >
             Télécharger le PDF
         </a>
